@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.voicejournal.app-debug-64:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.voicejournal.app-main-66:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.voicejournal.app-debug-64:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.voicejournal.app-main-66:/drawable/ic_launcher_foreground.xml"
+    }
+]
