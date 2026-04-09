@@ -125,11 +125,12 @@ fun LogDetailScreen(
                     Text("Duration: ${DurationUtil.formatDuration(log.durationMs)}", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
 
-                // Audio player
+                // Audio player (only show active state when the main recording is playing)
                 item {
+                    val mainPlaybackState = if (playbackState.currentFileName == log.audioFileName) playbackState else com.voicejournal.app.audio.PlaybackState()
                     Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
                         AudioPlayerBar(
-                            playbackState = playbackState,
+                            playbackState = mainPlaybackState,
                             onPlay = { viewModel.playAudio(log.audioFileName) },
                             onPause = { viewModel.pauseAudio() },
                             onStop = { viewModel.stopAudio() },
