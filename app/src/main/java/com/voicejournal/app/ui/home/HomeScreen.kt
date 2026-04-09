@@ -115,7 +115,7 @@ fun HomeScreen(
                 modifier = Modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                items(recentLogs, key = { it.id }) { log ->
+                items(recentLogs, key = { it.id }, contentType = { "voice_log" }) { log ->
                     VoiceLogCard(
                         log = log,
                         onClick = { onNavigateToLogDetail(log.id) }

@@ -1,0 +1,4 @@
+#Thu Apr 09 07:30:14 GMT+01:00 2026
+base.0=D\:\\claude\\1st\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

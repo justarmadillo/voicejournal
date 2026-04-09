@@ -60,6 +60,8 @@ fun PersonDetailScreen(
     val playbackState by viewModel.audioPlayer.playbackState.collectAsStateWithLifecycle()
     var logToDelete by remember { mutableStateOf<VoiceLog?>(null) }
 
+    val groupedByMonth = remember(voiceLogs) { voiceLogs.groupBy { DateTimeUtil.getMonthYearKey(it.createdAt) } }
+
     Column(modifier = Modifier.fillMaxSize()) {
         TopAppBar(
             title = { Text(person?.name ?: "Person") },
@@ -118,12 +120,9 @@ fun PersonDetailScreen(
                 }
             }
 
-            // Timeline grouped by month
-            val groupedByMonth = voiceLogs.groupBy { DateTimeUtil.getMonthYearKey(it.createdAt) }
-
             groupedByMonth.forEach { (_, logsInMonth) ->
                 // Month header
-                item {
+                item(contentType = "month_header") {
                     Text(
                         text = DateTimeUtil.formatMonthYear(logsInMonth.first().createdAt),
                         style = MaterialTheme.typography.titleMedium,
@@ -133,7 +132,7 @@ fun PersonDetailScreen(
                 }
 
                 // Logs in this month
-                items(logsInMonth, key = { it.id }) { log ->
+                items(logsInMonth, key = { it.id }, contentType = { "timeline_log" }) { log ->
                     TimelineLogCard(
                         log = log,
                         isPlaying = playbackState.currentFileName == log.audioFileName && playbackState.isPlaying,

@@ -246,7 +246,7 @@ fun LogDetailScreen(
                     }
                 }
 
-                items(voiceNotes, key = { it.id }) { note ->
+                items(voiceNotes, key = { it.id }, contentType = { "voice_note" }) { note ->
                     VoiceNoteCard(
                         note = note,
                         playbackState = playbackState,

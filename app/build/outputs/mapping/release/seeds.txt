@@ -1,0 +1,1494 @@
+android.support.v4.graphics.drawable.IconCompatParcelizer
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityRetainedComponent
+androidx.core.app.RemoteActionCompat
+androidx.lifecycle.ProcessLifecycleOwner$attach$1
+androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
+androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
+dagger.hilt.android.components.ActivityComponent
+dagger.hilt.android.internal.Contexts
+dagger.hilt.internal.aggregatedroot.codegen._com_voicejournal_app_VoiceJournalApp
+dagger.hilt.android.internal.managers.ComponentSupplier
+dagger.hilt.android.scopes.ViewScoped
+dagger.hilt.android.migration.CustomInject
+dagger.hilt.android.components.ActivityRetainedComponent
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_internal_GeneratedEntryPoint
+dagger.hilt.android.internal.lifecycle.HiltViewModelMap
+dagger.hilt.android.internal.managers.HiltWrapper_SavedStateHandleModule
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1
+dagger.hilt.android.internal.managers.ActivityComponentManager
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ServiceComponentBuilder
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_EntryPoint
+androidx.compose.foundation.lazy.layout.TraversablePrefetchStateModifierElement
+androidx.compose.foundation.layout.WrapContentElement
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory
+androidx.compose.foundation.layout.HorizontalAlignElement
+dagger.hilt.android.internal.lifecycle.HiltViewModelMap$KeySet
+androidx.core.app.RemoteActionCompatParcelizer
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$ActivityModule
+dagger.hilt.android.internal.earlyentrypoint.AggregatedEarlyEntryPoint
+dagger.hilt.android.qualifiers.ApplicationContext
+dagger.hilt.android.internal.builders.FragmentComponentBuilder
+androidx.compose.foundation.IndicationModifierElement
+androidx.compose.foundation.ScrollingLayoutElement
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory$InstanceHolder
+dagger.hilt.internal.GeneratedEntryPoint
+androidx.compose.ui.semantics.AppendedSemanticsElement
+dagger.hilt.android.lifecycle.RetainedLifecycle
+dagger.hilt.internal.ComponentEntryPoint
+dagger.hilt.android.internal.lifecycle.HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint
+androidx.compose.foundation.layout.PaddingValuesElement
+androidx.startup.InitializationProvider
+dagger.hilt.EntryPoint
+dagger.hilt.android.UnstableApi
+dagger.hilt.android.R
+javax.inject.Singleton
+dagger.hilt.internal.GeneratedComponentManager
+dagger.hilt.internal.definecomponent.DefineComponentClasses
+com.voicejournal.app.data.local.db.entity.VoiceLogCategoryCrossRef
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelFactoriesEntryPoint
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$FragmentEntryPoint
+androidx.lifecycle.ReportFragment$LifecycleCallbacks
+androidx.compose.ui.focus.FocusOwnerImpl$modifier$2
+dagger.hilt.android.internal.managers.ViewComponentManager$ViewWithFragmentComponentBuilderEntryPoint
+dagger.hilt.android.internal.managers.ApplicationComponentManager
+androidx.compose.ui.draw.ShadowGraphicsLayerElement
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+androidx.compose.foundation.FocusableElement
+dagger.hilt.internal.definecomponent.DefineComponentNoParent
+androidx.compose.foundation.lazy.layout.LazyLayoutSemanticsModifier
+androidx.compose.material3.MinimumInteractiveModifier
+dagger.hilt.android.internal.migration.InjectedByHilt
+androidx.compose.foundation.selection.SelectableElement
+androidx.compose.foundation.MagnifierElement
+javax.inject.Scope
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl
+androidx.compose.ui.graphics.GraphicsLayerElement
+androidx.compose.foundation.lazy.layout.LazyLayoutItemAnimator$DisplayingDisappearingItemsElement
+dagger.hilt.internal.TestSingletonComponentManager
+dagger.hilt.android.internal.modules.ApplicationContextModule
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_AndroidEntryPoint
+dagger.hilt.android.internal.managers.HiltWrapper_ActivityRetainedComponentManager_ActivityRetainedComponentBuilderEntryPoint
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelModule
+dagger.hilt.android.ActivityRetainedLifecycle
+dagger.hilt.DefineComponent
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+androidx.compose.ui.layout.LayoutIdElement
+androidx.compose.animation.EnterExitTransitionElement
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper$1
+dagger.hilt.internal.processedrootsentinel.codegen._com_voicejournal_app_VoiceJournalApp
+dagger.hilt.android.internal.builders.ServiceComponentBuilder
+dagger.hilt.android.migration.package-info
+kotlinx.coroutines.android.AndroidDispatcherFactory
+dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder
+androidx.compose.ui.platform.DragAndDropModifierOnDragListener$modifier$1
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewComponentBuilder
+dagger.hilt.android.internal.lifecycle.HiltViewModelAssistedMap
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager
+androidx.profileinstaller.ProfileInstallerInitializer
+dagger.hilt.android.scopes.ActivityScoped
+androidx.navigation.compose.ComposeNavigator
+dagger.hilt.android.internal.managers.SavedStateHandleHolder
+androidx.compose.foundation.layout.LayoutWeightElement
+androidx.compose.ui.layout.LayoutElement
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewModelComponent
+androidx.profileinstaller.ProfileInstallReceiver
+dagger.hilt.android.internal.migration.HasCustomInject
+dagger.hilt.internal.GeneratedComponent
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_DefineComponent_Builder
+dagger.hilt.android.scopes.FragmentScoped
+dagger.hilt.android.internal.managers.ActivityComponentManager$ActivityComponentBuilderEntryPoint
+dagger.hilt.android.internal.managers.FragmentComponentManager$FragmentComponentBuilderEntryPoint
+dagger.hilt.android.flags.FragmentGetContextFix$FragmentGetContextFixEntryPoint
+androidx.navigation.NavControllerViewModel
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory
+dagger.hilt.android.internal.managers.FragmentComponentManager
+dagger.hilt.migration.AliasOf
+dagger.hilt.android.internal.ThreadUtil
+dagger.hilt.InstallIn
+dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder
+dagger.hilt.android.EarlyEntryPoint
+androidx.lifecycle.ReportFragment
+dagger.hilt.android.migration.CustomInjection
+dagger.hilt.codegen.OriginatingElement
+androidx.compose.foundation.layout.FillElement
+dagger.hilt.android.internal.managers.ViewComponentManager
+com.voicejournal.app.VoiceJournalApp
+dagger.hilt.internal.GeneratedComponentManagerHolder
+com.voicejournal.app.data.local.db.entity.VoiceNoteEntity
+androidx.compose.foundation.layout.SizeElement
+dagger.hilt.android.internal.modules.ActivityModule
+androidx.room.MultiInstanceInvalidationService
+javax.inject.Inject
+dagger.hilt.android.internal.builders.ViewComponentBuilder
+dagger.hilt.android.scopes.ActivityRetainedScoped
+androidx.navigation.compose.BackStackEntryIdViewModel
+com.voicejournal.app.data.local.db.entity.VoiceLogEntity
+dagger.hilt.android.WithFragmentBindings
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$LifecycleModule
+dagger.hilt.android.flags.FragmentGetContextFix
+androidx.compose.ui.focus.FocusChangedElement
+androidx.compose.ui.layout.OnGloballyPositionedElement
+dagger.hilt.internal.aggregatedroot.AggregatedRoot
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory
+dagger.hilt.GeneratesRootInput
+androidx.core.app.CoreComponentFactory
+dagger.hilt.android.internal.managers.HiltWrapper_ActivityRetainedComponentManager_LifecycleModule
+androidx.compose.ui.draw.DrawBehindElement
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory
+javax.inject.Qualifier
+dagger.hilt.android.internal.modules.HiltWrapper_ActivityModule
+dagger.hilt.android.migration.OptionalInject
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent
+com.voicejournal.app.data.local.db.VoiceJournalDatabase
+androidx.compose.ui.layout.OnSizeChangedModifier
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedLifecycleEntryPoint
+androidx.navigation.compose.DialogNavigator
+androidx.navigation.NavGraphNavigator
+dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule
+com.voicejournal.app.data.local.db.VoiceJournalDatabase_Impl
+androidx.versionedparcelable.CustomVersionedParcelable
+dagger.hilt.android.flags.FragmentGetContextFix$FragmentGetContextFixModule
+dagger.hilt.internal.UnsafeCasts
+dagger.hilt.android.internal.lifecycle.HiltWrapper_DefaultViewModelFactories_ActivityModule
+androidx.compose.foundation.ClickableElement
+dagger.hilt.android.scopes.ViewModelScoped
+dagger.hilt.android.components.ViewWithFragmentComponent
+dagger.hilt.android.HiltAndroidApp
+dagger.hilt.android.components.FragmentComponent
+androidx.versionedparcelable.ParcelImpl
+androidx.compose.ui.draw.DrawWithContentElement
+androidx.compose.ui.draw.DrawWithCacheElement
+dagger.hilt.android.internal.managers.ServiceComponentManager$ServiceComponentBuilderEntryPoint
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_HiltAndroidApp
+androidx.compose.foundation.BorderModifierNodeElement
+dagger.hilt.migration.DisableInstallInCheck
+androidx.compose.ui.semantics.ClearAndSetSemanticsElement
+dagger.hilt.internal.TestSingletonComponent
+dagger.hilt.android.internal.builders.ViewModelComponentBuilder
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_migration_AliasOf
+androidx.graphics.path.PathIteratorPreApi34Impl
+dagger.hilt.android.lifecycle.HiltViewModelExtensions$addCreationCallback$1$1
+androidx.compose.foundation.gestures.DraggableElement
+dagger.hilt.android.lifecycle.package-info
+androidx.graphics.path.ConicConverter
+androidx.lifecycle.SavedStateHandlesVM
+dagger.hilt.internal.Preconditions
+androidx.compose.ui.graphics.BlockGraphicsLayerElement
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ActivityCreatorEntryPoint
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityComponent
+androidx.compose.foundation.layout.PaddingElement
+dagger.hilt.android.internal.legacy.AggregatedElementProxy
+androidx.compose.foundation.text.input.internal.LegacyAdaptingPlatformTextInputModifier
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_FragmentComponentBuilder
+com.voicejournal.app.VoiceJournalApp_GeneratedInjector
+dagger.hilt.android.lifecycle.ActivityRetainedSavedState
+androidx.compose.foundation.relocation.BringIntoViewRequesterElement
+dagger.hilt.internal.aliasof.AliasOfPropagatedData
+dagger.hilt.internal.generatesrootinput.GeneratesRootInputPropagatedData
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories
+dagger.hilt.android.internal.managers.ServiceComponentManager
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory
+androidx.compose.foundation.BackgroundElement
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$ActivityEntryPoint
+dagger.hilt.android.internal.managers.SavedStateHandleModule
+dagger.hilt.android.internal.managers.ViewComponentManager$ViewComponentBuilderEntryPoint
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_InstallIn
+androidx.compose.foundation.layout.IntrinsicWidthElement
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper
+androidx.navigation.NavBackStackEntry$SavedStateViewModel
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$1
+dagger.hilt.android.lifecycle.HiltViewModel
+dagger.hilt.android.components.ViewComponent
+androidx.compose.ui.focus.FocusRequesterElement
+dagger.hilt.android.internal.builders.ActivityComponentBuilder
+androidx.core.graphics.drawable.IconCompatParcelizer
+androidx.emoji2.text.EmojiCompatInitializer
+com.voicejournal.app.MainActivity_GeneratedInjector
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory
+androidx.compose.foundation.text.handwriting.StylusHandwritingElementWithNegativePadding
+dagger.hilt.android.flags.FragmentGetContextFix$DisableFragmentGetContextFix
+dagger.hilt.package-info
+dagger.hilt.android.scopes.ServiceScoped
+dagger.hilt.android.migration.OptionalInjectCheck
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1
+androidx.core.graphics.drawable.IconCompat
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ActivityRetainedComponentBuilder
+javax.inject.Provider
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps
+dagger.hilt.android.internal.OnReceiveBytecodeInjectionMarker
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentBuilderEntryPoint
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2
+android.support.v4.app.RemoteActionCompatParcelizer
+dagger.hilt.android.EntryPointAccessors
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewComponent
+androidx.compose.ui.input.rotary.RotaryInputElement
+androidx.annotation.Keep
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory
+dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewWithFragmentComponent
+dagger.hilt.android.package-info
+androidx.compose.foundation.layout.UnspecifiedConstraintsElement
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_FragmentComponent
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewModelComponentBuilder
+javax.inject.Named
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_lifecycle_HiltViewModel
+androidx.compose.foundation.text.modifiers.TextStringSimpleElement
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt
+dagger.hilt.android.ActivityRetainedLifecycle$OnClearedListener
+androidx.compose.foundation.ScrollSemanticsElement
+androidx.compose.ui.focus.FocusPropertiesElement
+com.voicejournal.app.data.local.db.entity.CategoryEntity
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ServiceComponent
+androidx.compose.ui.draw.PainterElement
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1
+dagger.hilt.android.internal.lifecycle.HiltWrapper_HiltViewModelFactory_ViewModelModule
+dagger.hilt.android.ViewModelLifecycle
+dagger.hilt.EntryPoints
+dagger.hilt.android.qualifiers.ActivityContext
+dagger.hilt.android.AndroidEntryPoint
+dagger.hilt.android.internal.managers.HiltWrapper_ActivityRetainedComponentManager_ActivityRetainedLifecycleEntryPoint
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_internal_ComponentEntryPoint
+androidx.navigation.ActivityNavigator
+dagger.hilt.android.components.ViewModelComponent
+dagger.hilt.android.lifecycle.HiltViewModelExtensions
+dagger.hilt.android.internal.managers.BroadcastReceiverComponentManager
+androidx.compose.ui.semantics.EmptySemanticsElement
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ActivityComponentBuilder
+com.voicejournal.app.MainActivity
+dagger.hilt.components.SingletonComponent
+dagger.hilt.android.EarlyEntryPoints
+com.voicejournal.app.data.local.db.entity.PersonEntity
+androidx.lifecycle.ProcessLifecycleInitializer
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel
+androidx.compose.ui.input.pointer.SuspendPointerInputElement
+dagger.hilt.internal.processedrootsentinel.ProcessedRootSentinel
+androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
+dagger.hilt.DefineComponent$Builder
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_DefineComponent
+dagger.hilt.android.components.ServiceComponent
+androidx.navigation.compose.ComposeNavGraphNavigator
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation
+androidx.compose.foundation.gestures.ScrollableElement
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory
+androidx.compose.ui.input.key.KeyInputElement
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback
+dagger.hilt.android.internal.managers.ViewComponentManager: java.lang.Object componentLock
+com.voicejournal.app.ui.navigation.LogDetail$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModelProvider$Factory hiltViewModelFactory
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
+dagger.hilt.android.internal.managers.ActivityComponentManager: dagger.hilt.internal.GeneratedComponentManager activityRetainedComponentManager
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev$volatile
+kotlinx.serialization.json.JsonElement: kotlinx.serialization.json.JsonElement$Companion Companion
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: androidx.fragment.app.Fragment fragment
+kotlinx.coroutines.CancelledContinuation: int _resumed$volatile
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModelProvider$Factory delegateFactory
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: dagger.hilt.android.internal.managers.ActivityRetainedComponentManager this$0
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long enqIdx$volatile
+com.voicejournal.app.data.repository.BackupData$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd$volatile
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+kotlinx.serialization.json.JsonPrimitive: kotlinx.serialization.json.JsonPrimitive$Companion Companion
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+kotlinx.coroutines.InvokeOnCancelling: int _invoked$volatile
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack$volatile
+dagger.hilt.android.internal.ThreadUtil: java.lang.Thread mainThread
+dagger.hilt.android.internal.managers.ViewComponentManager: java.lang.Object component
+dagger.hilt.android.internal.managers.ApplicationComponentManager: java.lang.Object component
+dagger.hilt.android.internal.managers.FragmentComponentManager: java.lang.Object componentLock
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state$volatile
+com.voicejournal.app.data.repository.CategoryBackup$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: androidx.lifecycle.LifecycleEventObserver fragmentLifecycleObserver
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state$volatile
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size$volatile
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: androidx.lifecycle.ViewModelStoreOwner viewModelStoreOwner
+dagger.hilt.android.internal.managers.ServiceComponentManager: android.app.Service service
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder$volatile
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle$volatile
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: dagger.hilt.android.internal.builders.ViewModelComponentBuilder val$viewModelComponentBuilder
+kotlinx.coroutines.flow.ChannelAsFlow: int consumed$volatile
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: java.util.Set listeners
+com.voicejournal.app.data.repository.VoiceLogCategoryBackup$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+kotlinx.serialization.json.JsonNull: kotlinx.serialization.json.JsonNull INSTANCE
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue$volatile
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object tail$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: dagger.hilt.android.internal.modules.ApplicationContextModule module
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers$volatile
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: dagger.hilt.android.internal.modules.ApplicationContextModule module
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next$volatile
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment$volatile
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex$volatile
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted$volatile
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: android.content.Context context
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: androidx.lifecycle.viewmodel.CreationExtras extras
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next$volatile
+com.voicejournal.app.ui.navigation.PersonDetail$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+kotlinx.serialization.json.JsonObject: kotlinx.serialization.json.JsonObject$Companion Companion
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: javax.inject.Provider keySetProvider
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment$volatile
+kotlinx.serialization.json.internal.InternalJsonWriter: kotlinx.serialization.json.internal.InternalJsonWriter$Companion Companion
+dagger.hilt.android.internal.managers.ActivityComponentManager: java.lang.Object componentLock
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers$volatile
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+com.voicejournal.app.ui.navigation.Categories: com.voicejournal.app.ui.navigation.Categories INSTANCE
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+com.voicejournal.app.data.repository.VoiceLogCategoryBackup: com.voicejournal.app.data.repository.VoiceLogCategoryBackup$Companion Companion
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag$volatile
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: java.lang.Object componentLock
+com.voicejournal.app.ui.navigation.Settings: com.voicejournal.app.ui.navigation.Settings INSTANCE
+dagger.hilt.android.lifecycle.HiltViewModelExtensions$addCreationCallback$1$1: kotlin.jvm.functions.Function1 $callback
+dagger.hilt.android.internal.managers.ActivityComponentManager: android.app.Activity activity
+dagger.hilt.android.internal.managers.ViewComponentManager: android.view.View view
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: int _availablePermits$volatile
+dagger.hilt.EntryPoints: java.lang.String EARLY_ENTRY_POINT
+com.voicejournal.app.ui.navigation.RecordFlow$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: dagger.hilt.android.internal.lifecycle.HiltViewModelFactory this$0
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment$volatile
+kotlinx.serialization.json.JsonArray: kotlinx.serialization.json.JsonArray$Companion Companion
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask$volatile
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+kotlin.jvm.internal.Lambda: int arity
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: boolean nonComponentActivity
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+com.voicejournal.app.data.repository.PersonBackup: com.voicejournal.app.data.repository.PersonBackup$Companion Companion
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef$volatile
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: javax.inject.Provider activityProvider
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+androidx.compose.foundation.lazy.layout.DefaultLazyKey: android.os.Parcelable$Creator CREATOR
+dagger.hilt.android.internal.managers.ApplicationComponentManager: java.lang.Object componentLock
+kotlinx.coroutines.channels.BufferedChannel: long receivers$volatile
+kotlinx.coroutines.CompletedExceptionally: int _handled$volatile
+dagger.hilt.android.internal.modules.ApplicationContextModule: android.content.Context applicationContext
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl$volatile
+kotlin.coroutines.SafeContinuation: java.lang.Object result
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object head$volatile
+com.voicejournal.app.data.repository.BackupData: com.voicejournal.app.data.repository.BackupData$Companion Companion
+dagger.hilt.android.EntryPointAccessors: dagger.hilt.android.EntryPointAccessors INSTANCE
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: boolean onClearedDispatched
+dagger.hilt.android.internal.managers.ViewComponentManager: boolean hasFragmentBindings
+com.voicejournal.app.ui.navigation.LogDetail: com.voicejournal.app.ui.navigation.LogDetail$Companion Companion
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause$volatile
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed$volatile
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state$volatile
+androidx.navigation.NavBackStackEntryState: android.os.Parcelable$Creator CREATOR
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.viewmodel.CreationExtras$Key CREATION_CALLBACK_KEY
+dagger.hilt.android.internal.managers.ActivityComponentManager: java.lang.Object component
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: javax.inject.Provider savedStateHandleHolderProvider
+kotlin.SafePublicationLazyImpl: java.lang.Object _value
+androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper$1: dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper this$0
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev$volatile
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState$volatile
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: javax.inject.Provider viewModelComponentBuilderProvider
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: android.view.LayoutInflater baseInflater
+dagger.hilt.android.internal.managers.ServiceComponentManager: java.lang.Object component
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: java.util.Map keySet
+com.voicejournal.app.data.repository.PersonBackup$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+com.voicejournal.app.data.repository.VoiceNoteBackup: com.voicejournal.app.data.repository.VoiceNoteBackup$Companion Companion
+androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur$volatile
+com.voicejournal.app.ui.navigation.PeopleList: com.voicejournal.app.ui.navigation.PeopleList INSTANCE
+com.voicejournal.app.data.repository.VoiceLogBackup$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long deqIdx$volatile
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: dagger.hilt.android.internal.managers.SavedStateHandleHolder savedStateHandleHolder
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: dagger.hilt.android.components.ActivityRetainedComponent component
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner$volatile
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus$volatile
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex$volatile
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: java.util.Map hiltViewModelKeys
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: dagger.hilt.android.internal.builders.ViewModelComponentBuilder viewModelComponentBuilder
+dagger.hilt.android.internal.managers.FragmentComponentManager: java.lang.Object component
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle$volatile
+kotlinx.coroutines.JobSupport: java.lang.Object _state$volatile
+androidx.lifecycle.ViewModel: androidx.lifecycle.viewmodel.internal.ViewModelImpl impl
+com.voicejournal.app.data.repository.VoiceNoteBackup$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause$volatile
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer$volatile
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation$volatile
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: android.view.LayoutInflater inflater
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting$volatile
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler$volatile
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+com.voicejournal.app.ui.navigation.RecordFlow: com.voicejournal.app.ui.navigation.RecordFlow$Companion Companion
+com.voicejournal.app.data.repository.VoiceLogBackup: com.voicejournal.app.data.repository.VoiceLogBackup$Companion Companion
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex$volatile
+com.voicejournal.app.ui.navigation.Home: com.voicejournal.app.ui.navigation.Home INSTANCE
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: dagger.hilt.android.components.ActivityRetainedComponent component
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: androidx.lifecycle.SavedStateHandle handle
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated$volatile
+dagger.hilt.android.internal.managers.FragmentComponentManager: androidx.fragment.app.Fragment fragment
+com.voicejournal.app.data.repository.CategoryBackup: com.voicejournal.app.data.repository.CategoryBackup$Companion Companion
+kotlinx.coroutines.DispatchedCoroutine: int _decision$volatile
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory$InstanceHolder: dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory INSTANCE
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next$volatile
+com.voicejournal.app.ui.navigation.PersonDetail: com.voicejournal.app.ui.navigation.PersonDetail$Companion Companion
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: android.content.Context val$context
+dagger.hilt.android.internal.managers.ApplicationComponentManager: dagger.hilt.android.internal.managers.ComponentSupplier componentCreator
+dagger.hilt.android.internal.builders.ActivityComponentBuilder: dagger.hilt.android.internal.builders.ActivityComponentBuilder activity(android.app.Activity)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreFling(android.view.View,float,float)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,long,android.graphics.BlendMode)
+com.voicejournal.app.data.local.db.VoiceJournalDatabase_Impl: VoiceJournalDatabase_Impl()
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromActivity(android.app.Activity)
+dagger.hilt.android.internal.modules.ApplicationContextModule: android.app.Application provideApplication()
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.ui.graphics.layer.OutlineVerificationHelper: void setPath(android.graphics.Outline,androidx.compose.ui.graphics.Path)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewComponentBuilder: _dagger_hilt_android_internal_builders_ViewComponentBuilder()
+dagger.hilt.android.lifecycle.RetainedLifecycle: void removeOnClearedListener(dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.core.view.ViewCompat$Api28Impl: void addOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+androidx.compose.ui.text.android.CanvasCompatS: void drawPatch(android.graphics.Canvas,android.graphics.NinePatch,android.graphics.RectF,android.graphics.Paint)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
+androidx.compose.ui.text.android.selection.Api34SegmentFinder: android.text.SegmentFinder toAndroidSegmentFinder$ui_text_release(androidx.compose.ui.text.android.selection.SegmentFinder)
+kotlinx.serialization.json.JsonElement$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineSpotShadowColor(android.view.View,int)
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_migration_AliasOf: dagger_hilt_migration_AliasOf()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.graphics.GraphicsContext getGraphicsContext()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$1: HiltViewModelFactory$1()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+dagger.hilt.android.internal.managers.ViewComponentManager: dagger.hilt.internal.GeneratedComponentManager getParentComponentManager(boolean)
+kotlin.collections.AbstractList: AbstractList()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performRemoveSpaceGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.RemoveSpaceGesture,androidx.compose.ui.text.AnnotatedString,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.compose.foundation.text.input.internal.EditorInfoApi34: void setHandwritingGestures(android.view.inputmethod.EditorInfo)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+androidx.compose.ui.platform.RenderNodeApi29VerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawRenderNode(android.graphics.Canvas,android.graphics.RenderNode)
+androidx.compose.ui.platform.AndroidComposeViewAssistHelperMethodsO: void setClassName(android.view.ViewStructure,android.view.View)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String[] entryPoints()
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
+androidx.compose.ui.platform.AndroidComposeView: void setContentCaptureManager$ui_release(androidx.compose.ui.contentcapture.AndroidContentCaptureManager)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.ui.text.android.StaticLayoutFactoryImpl: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: java.lang.Object generatedComponent()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_DefineComponent_Builder: dagger_hilt_DefineComponent_Builder()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Icon toIcon(androidx.core.graphics.drawable.IconCompat,android.content.Context)
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
+androidx.compose.ui.graphics.Api26Bitmap: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace$ui_graphics_release(android.graphics.Bitmap)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int toTextGranularity-NUwxegE(int)
+androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: androidx.compose.ui.graphics.BlendModeColorFilter createBlendModeColorFilter(android.graphics.BlendModeColorFilter)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: android.graphics.BlendModeColorFilter BlendModeColorFilter-xETnrds(long,int)
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: androidx.lifecycle.SavedStateHandle getSavedStateHandle()
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1: FocusableKt$FocusableInNonTouchModeElement$1()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ActivityCreatorEntryPoint: dagger.hilt.android.internal.builders.ViewModelComponentBuilder getViewModelComponentBuilder()
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: ViewComponentManager$FragmentContextWrapper(android.view.LayoutInflater,androidx.fragment.app.Fragment)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory create(dagger.hilt.android.internal.modules.ApplicationContextModule)
+androidx.core.view.ViewCompat$Api29Impl: void setSystemGestureExclusionRects(android.view.View,java.util.List)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: java.lang.Object getSystemService(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: float getTranslationZ(android.view.View)
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineAmbientShadowColor(android.view.View,int)
+androidx.graphics.path.PathIteratorPreApi34Impl: long createInternalPathIterator(android.graphics.Path,int,float)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: android.view.LayoutInflater access$202(dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper,android.view.LayoutInflater)
+androidx.activity.EdgeToEdgeApi21: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.profileinstaller.ProfileInstallerInitializer$Choreographer16Impl: void postFrameCallback(java.lang.Runnable)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.material3.ColorResourceHelper: long getColor-WaAFU9c(android.content.Context,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean isAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: java.lang.Object localeSpan(androidx.compose.ui.text.intl.LocaleList)
+androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
+androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.compose.ui.text.android.StaticLayoutFactory26: void setJustificationMode(android.text.StaticLayout$Builder,int)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories: androidx.lifecycle.ViewModelProvider$Factory getActivityFactory(androidx.activity.ComponentActivity,androidx.lifecycle.ViewModelProvider$Factory)
+androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.activity.ComponentActivity: void setContentView(android.view.View)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
+androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: void setExtras(androidx.lifecycle.viewmodel.CreationExtras)
+androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.core.os.BundleCompat$Api33Impl: java.lang.Object getParcelable(android.os.Bundle,java.lang.String,java.lang.Class)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromApplication(android.content.Context)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
+kotlin.collections.AbstractMutableSet: AbstractMutableSet()
+androidx.core.view.ViewCompat$Api21Impl: void setNestedScrollingEnabled(android.view.View,boolean)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper$1: void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior: androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior[] values()
+dagger.hilt.internal.Preconditions: Preconditions()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ActivityCreatorEntryPoint: java.util.Map getViewModelKeys()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+dagger.hilt.android.flags.FragmentGetContextFix: FragmentGetContextFix()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performInsertGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.InsertGesture,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+dagger.hilt.android.internal.managers.ViewComponentManager: dagger.hilt.internal.GeneratedComponentManager maybeGetParentComponentManager()
+androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
+dagger.hilt.android.EarlyEntryPoints: java.lang.Object get(android.content.Context,java.lang.Class)
+dagger.hilt.android.internal.managers.ViewComponentManager: java.lang.Object generatedComponent()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.autofill.AutofillApi26Helper: android.view.autofill.AutofillId getAutofillId(android.view.ViewStructure)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+dagger.hilt.android.internal.managers.ViewComponentManager: ViewComponentManager(android.view.View,boolean)
+dagger.hilt.android.flags.FragmentGetContextFix$FragmentGetContextFixEntryPoint: java.util.Set getDisableFragmentGetContextFix()
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
+dagger.hilt.android.internal.managers.FragmentComponentManager: java.lang.Object createComponent()
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorSize(long)
+androidx.core.view.ViewCompat$Api23Impl: int getScrollIndicators(android.view.View)
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int,int)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,float,float,float,float)
+kotlin.DeprecationLevel: kotlin.DeprecationLevel[] values()
+androidx.activity.EdgeToEdgeApi26: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.core.app.NotificationManagerCompat$Api24Impl: boolean areNotificationsEnabled(android.app.NotificationManager)
+androidx.core.view.ViewCompat$Api21Impl: void setTransitionName(android.view.View,java.lang.String)
+dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener: void onCleared()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.graphics.Path getManualClipPath()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory: dagger.hilt.android.ActivityRetainedLifecycle get()
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase[] values()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.ui.text.android.BoringLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.BoringLayout)
+androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
+androidx.core.view.ViewCompat$Api21Impl: void setZ(android.view.View,float)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: androidx.lifecycle.ViewModelProvider$Factory fromActivity(androidx.activity.ComponentActivity,androidx.lifecycle.ViewModelProvider$Factory)
+dagger.hilt.internal.Preconditions: java.lang.Object checkNotNull(java.lang.Object)
+dagger.hilt.android.internal.modules.ApplicationContextModule: ApplicationContextModule(android.content.Context)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getUniqueId(android.view.accessibility.AccessibilityNodeInfo)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.Class rootAnnotation()
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,float,float,float,float)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.View)
+androidx.compose.ui.text.android.AndroidLayoutApi34: int[] getRangeForRect$ui_text_release(androidx.compose.ui.text.android.TextLayout,android.graphics.RectF,int,kotlin.jvm.functions.Function2)
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
+dagger.hilt.android.lifecycle.HiltViewModelExtensions: androidx.lifecycle.viewmodel.CreationExtras withCreationCallback(androidx.lifecycle.viewmodel.CreationExtras,kotlin.jvm.functions.Function1)
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isToggle(android.view.autofill.AutofillValue)
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintMode(android.view.View,android.graphics.PorterDuff$Mode)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems[] values()
+kotlinx.serialization.json.JsonPrimitive$Companion: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.android.internal.managers.ApplicationComponentManager: java.lang.Object generatedComponent()
+androidx.core.view.ViewCompat$Api21Impl: android.graphics.PorterDuff$Mode getBackgroundTintMode(android.view.View)
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,android.graphics.RectF)
+androidx.room.MultiInstanceInvalidationService: MultiInstanceInvalidationService()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction getActionScrollInDirection()
+dagger.hilt.android.internal.ThreadUtil: ThreadUtil()
+androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
+androidx.core.view.WindowCompat$Api30Impl: void setDecorFitsSystemWindows(android.view.Window,boolean)
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledVerticalScrollFactor(android.view.ViewConfiguration)
+androidx.profileinstaller.ProfileVerifier$Api33Impl: android.content.pm.PackageInfo getPackageInfo(android.content.pm.PackageManager,android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.core.view.ViewCompat$Api21Impl: float getElevation(android.view.View)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory: ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.ui.text.AnnotatedString,kotlin.jvm.functions.Function1)
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] uninstallModulesDeps()
+androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$2(androidx.compose.material.ripple.RippleHostView)
+androidx.core.view.ViewCompat$Api30Impl: void setStateDescription(android.view.View,java.lang.CharSequence)
+androidx.compose.ui.text.android.StaticLayoutFactory33: void setLineBreakConfig(android.text.StaticLayout$Builder,int,int)
+dagger.hilt.android.lifecycle.HiltViewModel: java.lang.Class assistedFactory()
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: androidx.lifecycle.SavedStateHandle get()
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: dagger.hilt.android.internal.managers.SavedStateHandleHolder getSavedStateHandleHolder()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.ui.platform.AndroidComposeView: kotlin.jvm.functions.Function1 getConfigurationChangeObserver()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$ViewTranslationHelperMethods: void onCreateVirtualViewTranslationRequests(androidx.compose.ui.contentcapture.AndroidContentCaptureManager,long[],int[],java.util.function.Consumer)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromFragment(androidx.fragment.app.Fragment)
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromView(android.view.View)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode[] values()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: void onCleared()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
+dagger.hilt.android.internal.builders.ViewModelComponentBuilder: dagger.hilt.android.internal.builders.ViewModelComponentBuilder savedStateHandle(androidx.lifecycle.SavedStateHandle)
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt: androidx.compose.runtime.ProvidableCompositionLocal getLocalLifecycleOwner()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory create(javax.inject.Provider,javax.inject.Provider)
+androidx.navigation.compose.BackStackEntryIdViewModel: BackStackEntryIdViewModel(androidx.lifecycle.SavedStateHandle)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelModule: java.util.Map hiltViewModelAssistedMap()
+androidx.compose.ui.graphics.layer.ViewLayer: void setCanUseCompositingLayer$ui_graphics_release(boolean)
+androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
+dagger.hilt.android.internal.managers.FragmentComponentManager: void validate(androidx.fragment.app.Fragment)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.graphics.layer.ViewLayer: android.view.View getOwnerView()
+dagger.hilt.codegen.OriginatingElement: java.lang.Class topLevelClass()
+androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui_release(long)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.graphics.Insets getWaterfallInsets(android.view.DisplayCutout)
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.compose.ui.text.android.CanvasCompatS: void drawGlyphs(android.graphics.Canvas,int[],int,float[],int,int,android.graphics.fonts.Font,android.graphics.Paint)
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: SavedStateHandleHolder(androidx.lifecycle.viewmodel.CreationExtras)
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+dagger.hilt.android.R: R()
+androidx.compose.ui.platform.AndroidComposeView: void setConfigurationChangeObserver(kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest getRootForTest()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize[] values()
+dagger.hilt.EntryPoints: boolean hasAnnotationReflection(java.lang.Class,java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType[] values()
+androidx.compose.ui.platform.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+androidx.compose.foundation.Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ActivityRetainedComponentBuilder: _dagger_hilt_android_internal_builders_ActivityRetainedComponentBuilder()
+androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+dagger.hilt.android.internal.managers.ViewComponentManager$ViewComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.ViewComponentBuilder viewComponentBuilder()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: androidx.lifecycle.ViewModel createViewModel(dagger.hilt.android.components.ViewModelComponent,java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder retainedComponentBuilder()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,android.graphics.Rect)
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,android.graphics.RectF)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
+androidx.core.view.ViewCompat$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
+dagger.hilt.android.internal.ThreadUtil: boolean isMainThread()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+kotlinx.coroutines.android.AndroidDispatcherFactory: java.lang.String hintOnError()
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String[] componentEntryPoints()
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: android.graphics.ColorSpace androidColorSpace(androidx.compose.ui.graphics.colorspace.ColorSpace)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory get()
+androidx.graphics.path.ConicConverter: int internalConicToQuadratics(float[],int,float[],float,float)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase valueOf(java.lang.String)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: android.view.accessibility.AccessibilityNodeInfo$ExtraRenderingInfo getExtraRenderingInfo(android.view.accessibility.AccessibilityNodeInfo)
+dagger.hilt.internal.processedrootsentinel.codegen._com_voicejournal_app_VoiceJournalApp: _com_voicejournal_app_VoiceJournalApp()
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
+dagger.hilt.android.migration.OptionalInjectCheck: boolean check(java.lang.Object)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromView(android.view.View,java.lang.Class)
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String[] replaces()
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+kotlinx.serialization.json.internal.WriteMode: kotlinx.serialization.json.internal.WriteMode valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int fallback(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.HandwritingGesture)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getResId(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api29Impl: void addPageActions(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+androidx.compose.ui.platform.AndroidViewConfigurationApi34: float getScaledHandwritingSlop(android.view.ViewConfiguration)
+androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+androidx.core.view.ViewCompat$Api28Impl: void setAutofillId(android.view.View,androidx.core.view.autofill.AutofillIdCompat)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View)
+kotlinx.coroutines.android.AndroidDispatcherFactory: int getLoadPriority()
+androidx.compose.ui.text.android.Paint29: void getTextBounds(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Rect)
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus[] values()
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: android.content.Context provideContext(dagger.hilt.android.internal.modules.ApplicationContextModule)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.compose.ui.text.android.StaticLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.StaticLayout)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawTextRun(android.graphics.Canvas,android.graphics.text.MeasuredText,int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.compose.ui.graphics.layer.view.DrawChildContainer: int getChildCount()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+dagger.hilt.android.internal.builders.ViewComponentBuilder: dagger.hilt.android.internal.builders.ViewComponentBuilder view(android.view.View)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
+androidx.core.os.BundleCompat$Api33Impl: java.io.Serializable getSerializable(android.os.Bundle,java.lang.String,java.lang.Class)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: java.lang.CharSequence getContainerTitle(android.view.accessibility.AccessibilityNodeInfo)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreScroll(android.view.View,int,int,int[],int[])
+androidx.core.view.ViewCompat$Api21Impl: android.content.res.ColorStateList getBackgroundTintList(android.view.View)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromApplication(android.content.Context,java.lang.Class)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory: java.lang.Object get()
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+dagger.hilt.android.internal.managers.ApplicationComponentManager: ApplicationComponentManager(dagger.hilt.android.internal.managers.ComponentSupplier)
+androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.AndroidComposeView getOwnerView()
+dagger.hilt.android.internal.lifecycle.HiltWrapper_HiltViewModelFactory_ViewModelModule: HiltWrapper_HiltViewModelFactory_ViewModelModule()
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: androidx.lifecycle.ViewModelProvider$Factory getHiltViewModelFactory(androidx.lifecycle.ViewModelProvider$Factory)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui_release$annotations()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+dagger.hilt.android.internal.managers.ServiceComponentManager: java.lang.Object generatedComponent()
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.core.view.ViewCompat$Api28Impl: void removeOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Drawable createAdaptiveIconDrawable(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)
+androidx.navigation.NavBackStackEntry$SavedStateViewModel: NavBackStackEntry$SavedStateViewModel(androidx.lifecycle.SavedStateHandle)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.compose.material.ripple.UnprojectedRipple$MRadiusHelper: void setRadius(android.graphics.drawable.RippleDrawable,int)
+androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
+dagger.hilt.internal.definecomponent.DefineComponentClasses: java.lang.String component()
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getType(java.lang.Object)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories: DefaultViewModelFactories()
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_EntryPoint: dagger_hilt_EntryPoint()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isDate(android.view.autofill.AutofillValue)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
+dagger.hilt.EntryPoints: java.lang.Object get(java.lang.Object,java.lang.Class)
+dagger.hilt.internal.processedrootsentinel.ProcessedRootSentinel: java.lang.String[] roots()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
+dagger.hilt.android.internal.managers.ViewComponentManager: android.content.Context getParentContext(java.lang.Class,boolean)
+dagger.hilt.android.internal.managers.ActivityComponentManager: java.lang.Object createComponent()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean hasRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo)
+dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder: dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder savedStateHandleHolder(dagger.hilt.android.internal.managers.SavedStateHandleHolder)
+androidx.core.app.ActivityCompat$Api23Impl: boolean shouldShowRequestPermissionRationale(android.app.Activity,java.lang.String)
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory create(javax.inject.Provider)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: androidx.fragment.app.Fragment access$002(dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper,androidx.fragment.app.Fragment)
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
+dagger.hilt.android.internal.managers.ViewComponentManager$ViewWithFragmentComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder viewWithFragmentComponentBuilder()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityRetainedComponent: _dagger_hilt_android_components_ActivityRetainedComponent()
+dagger.hilt.android.internal.builders.ViewModelComponentBuilder: dagger.hilt.android.components.ViewModelComponent build()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior: androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_InstallIn: dagger_hilt_InstallIn()
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: ApplicationContextModule_ProvideApplicationFactory(dagger.hilt.android.internal.modules.ApplicationContextModule)
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,int,int,int,int)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+dagger.hilt.internal.TestSingletonComponentManager: java.lang.Object earlySingletonComponent()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$FragmentEntryPoint: dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory getHiltInternalFactoryFactory()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int)
+androidx.compose.ui.text.android.CanvasCompatM: void drawTextRun(android.graphics.Canvas,java.lang.CharSequence,int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
+androidx.activity.EdgeToEdgeApi28: void adjustLayoutInDisplayCutoutMode(android.view.Window)
+kotlinx.serialization.json.internal.WriteMode: kotlinx.serialization.json.internal.WriteMode[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$LifecycleModule: ActivityRetainedComponentManager$LifecycleModule()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewModelComponent: _dagger_hilt_android_components_ViewModelComponent()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_FragmentComponent: _dagger_hilt_android_components_FragmentComponent()
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation[] values()
+dagger.hilt.android.internal.builders.ViewModelComponentBuilder: dagger.hilt.android.internal.builders.ViewModelComponentBuilder viewModelLifecycle(dagger.hilt.android.ViewModelLifecycle)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetBottom(android.view.DisplayCutout)
+androidx.profileinstaller.ProfileInstallerInitializer$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.core.view.ViewCompat$Api28Impl: void setScreenReaderFocusable(android.view.View,boolean)
+androidx.activity.Api34Impl: float progress(android.window.BackEvent)
+kotlinx.serialization.json.ClassDiscriminatorMode: kotlinx.serialization.json.ClassDiscriminatorMode valueOf(java.lang.String)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+kotlinx.serialization.json.JsonObject$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+dagger.hilt.android.lifecycle.HiltViewModelExtensions: androidx.lifecycle.viewmodel.CreationExtras addCreationCallback(androidx.lifecycle.viewmodel.MutableCreationExtras,kotlin.jvm.functions.Function1)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setText(android.view.ViewStructure,java.lang.CharSequence)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.compose.foundation.layout.FlowLayoutOverflow$OverflowType: androidx.compose.foundation.layout.FlowLayoutOverflow$OverflowType[] values()
+dagger.hilt.android.internal.Contexts: android.app.Application getApplication(android.content.Context)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performInsertGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.InsertGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.compose.ui.platform.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+dagger.hilt.migration.AliasOf: java.lang.Class[] value()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,int,android.graphics.BlendMode)
+androidx.core.view.ViewCompat$Api21Impl: boolean isNestedScrollingEnabled(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
+dagger.hilt.DefineComponent: java.lang.Class parent()
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api34Impl: void notifyViewsAppeared(android.view.contentcapture.ContentCaptureSession,java.util.List)
+androidx.core.graphics.PaintCompat$Api23Impl: boolean hasGlyph(android.graphics.Paint,java.lang.String)
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode[] values()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$ViewTranslationHelperMethods: void onVirtualViewTranslationResponses(androidx.compose.ui.contentcapture.AndroidContentCaptureManager,android.util.LongSparseArray)
+androidx.core.view.ViewCompat$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+androidx.compose.foundation.text.input.internal.Api34StartStylusHandwriting: void startStylusHandwriting(android.view.inputmethod.InputMethodManager,android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setContentDescription(android.view.ViewStructure,java.lang.CharSequence)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String[] originatingRootSimpleNames()
+dagger.hilt.android.migration.CustomInjection: void inject(android.app.Application)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
+androidx.lifecycle.ViewModel: void addCloseable(java.lang.String,java.lang.AutoCloseable)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory$InstanceHolder: ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory$InstanceHolder()
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+kotlin.DeprecationLevel: kotlin.DeprecationLevel valueOf(java.lang.String)
+androidx.graphics.path.PathIteratorPreApi34Impl: boolean internalPathIteratorHasNext(long)
+com.voicejournal.app.ui.navigation.Home: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
+androidx.core.view.DisplayCutoutCompat$Api28Impl: java.util.List getBoundingRects(android.view.DisplayCutout)
+androidx.core.os.BundleCompat$Api33Impl: android.util.SparseArray getSparseParcelableArray(android.os.Bundle,java.lang.String,java.lang.Class)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
+androidx.compose.ui.graphics.layer.ViewLayer: void setInvalidated(boolean)
+androidx.lifecycle.ViewModel: void addCloseable(java.lang.AutoCloseable)
+androidx.compose.foundation.text.input.internal.Api34LegacyPerformHandwritingGestureImpl: boolean previewHandwritingGesture(androidx.compose.foundation.text.LegacyTextFieldState,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.view.inputmethod.PreviewableHandwritingGesture,android.os.CancellationSignal)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setContainerTitle(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_DefineComponent: dagger_hilt_DefineComponent()
+dagger.hilt.android.internal.managers.FragmentComponentManager$FragmentComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.FragmentComponentBuilder fragmentComponentBuilder()
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems valueOf(java.lang.String)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: ApplicationContextModule_ProvideContextFactory(dagger.hilt.android.internal.modules.ApplicationContextModule)
+dagger.hilt.android.internal.ThreadUtil: void ensureMainThread()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState valueOf(java.lang.String)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: ActivityRetainedComponentManager$1(dagger.hilt.android.internal.managers.ActivityRetainedComponentManager,android.content.Context)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityHeading(android.view.View,boolean)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewModelComponentBuilder: _dagger_hilt_android_internal_builders_ViewModelComponentBuilder()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: ActivityRetainedComponentManager(androidx.activity.ComponentActivity)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: android.app.Application provideApplication(dagger.hilt.android.internal.modules.ApplicationContextModule)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setClassName(android.view.ViewStructure,java.lang.String)
+androidx.core.os.BundleApi21ImplKt: void putSizeF(android.os.Bundle,java.lang.String,android.util.SizeF)
+androidx.navigation.serialization.InternalType: androidx.navigation.serialization.InternalType[] values()
+javax.inject.Provider: java.lang.Object get()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.core.content.res.FontResourcesParserCompat$Api21Impl: int getType(android.content.res.TypedArray,int)
+androidx.navigation.NavControllerViewModel: NavControllerViewModel()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api24Impl: void addSetProgressAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+com.voicejournal.app.VoiceJournalApp: VoiceJournalApp()
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+dagger.hilt.android.internal.builders.FragmentComponentBuilder: dagger.hilt.android.internal.builders.FragmentComponentBuilder fragment(androidx.fragment.app.Fragment)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModelProvider$Factory createInternal(android.app.Activity,androidx.savedstate.SavedStateRegistryOwner,android.os.Bundle,androidx.lifecycle.ViewModelProvider$Factory)
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutPath(android.graphics.Canvas,android.graphics.Path)
+dagger.hilt.android.internal.managers.ActivityComponentManager: java.lang.Object generatedComponent()
+com.voicejournal.app.data.repository.PersonBackup$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeView: void setAccessibilityEventBatchIntervalMillis(long)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] rootDeps()
+androidx.compose.ui.text.font.TypefaceHelperMethodsApi28: android.graphics.Typeface create(android.graphics.Typeface,int,boolean)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModel create(kotlin.reflect.KClass,androidx.lifecycle.viewmodel.CreationExtras)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult[] values()
+dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder: dagger.hilt.android.components.ViewWithFragmentComponent build()
+dagger.hilt.internal.aggregatedroot.codegen._com_voicejournal_app_VoiceJournalApp: _com_voicejournal_app_VoiceJournalApp()
+androidx.compose.ui.window.PopupLayout: int getDisplayWidth()
+androidx.compose.ui.autofill.AutofillApi23Helper: void setId(android.view.ViewStructure,int,java.lang.String,java.lang.String,java.lang.String)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
+dagger.hilt.android.AndroidEntryPoint: java.lang.Class value()
+androidx.compose.ui.scrollcapture.ScrollCapture: void onScrollCaptureSearch(android.view.View,androidx.compose.ui.semantics.SemanticsOwner,kotlin.coroutines.CoroutineContext,java.util.function.Consumer)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.LocaleListHelper: void setHintLocales(android.view.inputmethod.EditorInfo,androidx.compose.ui.text.intl.LocaleList)
+androidx.core.view.ViewCompat$Api21Impl: java.lang.String getTransitionName(android.view.View)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemColumnTitle(java.lang.Object)
+androidx.room.Index$Order: androidx.room.Index$Order[] values()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: java.lang.Object get()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$ActivityEntryPoint: dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory getHiltInternalFactoryFactory()
+dagger.hilt.android.internal.managers.HiltWrapper_ActivityRetainedComponentManager_LifecycleModule: HiltWrapper_ActivityRetainedComponentManager_LifecycleModule()
+dagger.hilt.android.internal.managers.ActivityComponentManager: dagger.hilt.android.internal.managers.SavedStateHandleHolder getSavedStateHandleHolder()
+androidx.core.graphics.drawable.IconCompat$Api28Impl: java.lang.String getResPackage(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: androidx.lifecycle.ViewModel create(kotlin.reflect.KClass,androidx.lifecycle.viewmodel.CreationExtras)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
+dagger.hilt.internal.aliasof.AliasOfPropagatedData: java.lang.Class[] defineComponentScopes()
+androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performInsertionOnLegacyTextField(int,java.lang.String,kotlin.jvm.functions.Function1)
+androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
+androidx.lifecycle.ReportFragment: ReportFragment()
+androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+dagger.hilt.android.internal.earlyentrypoint.AggregatedEarlyEntryPoint: java.lang.String earlyEntryPoint()
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
+dagger.hilt.android.EarlyEntryPoints: EarlyEntryPoints()
+androidx.core.os.BundleCompat$Api33Impl: java.util.ArrayList getParcelableArrayList(android.os.Bundle,java.lang.String,java.lang.Class)
+androidx.compose.ui.text.android.StaticLayoutFactoryDefault: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory create(javax.inject.Provider)
+androidx.navigation.compose.DialogNavigator: DialogNavigator()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories: androidx.lifecycle.ViewModelProvider$Factory getFragmentFactory(androidx.fragment.app.Fragment,androidx.lifecycle.ViewModelProvider$Factory)
+androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityComponent: _dagger_hilt_android_components_ActivityComponent()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: dagger.hilt.android.internal.managers.SavedStateHandleHolder getSavedStateHandleHolder()
+androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+androidx.activity.EdgeToEdgeApi23: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String originatingRootPackage()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent: _dagger_hilt_components_SingletonComponent()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+kotlin.jvm.internal.Lambda: java.lang.String toString()
+androidx.activity.EdgeToEdgeApi30: void adjustLayoutInDisplayCutoutMode(android.view.Window)
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.net.Uri getUri(java.lang.Object)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewAppeared(android.view.contentcapture.ContentCaptureSession,android.view.ViewStructure)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: long getMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
+androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_HiltAndroidApp: dagger_hilt_android_HiltAndroidApp()
+androidx.compose.ui.autofill.AutofillApi23Helper: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewsDisappeared(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long[])
+androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+dagger.hilt.internal.GeneratedComponentManager: java.lang.Object generatedComponent()
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: RetainedLifecycleImpl()
+kotlin.collections.AbstractMutableList: AbstractMutableList()
+dagger.hilt.android.internal.managers.ComponentSupplier: java.lang.Object get()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: dagger.hilt.android.components.ActivityRetainedComponent generatedComponent()
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
+dagger.hilt.android.internal.Contexts: Contexts()
+dagger.hilt.android.flags.FragmentGetContextFix: boolean isFragmentGetContextFixDisabled(android.content.Context)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: java.lang.Object get()
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_lifecycle_HiltViewModel: dagger_hilt_android_lifecycle_HiltViewModel()
+androidx.compose.ui.platform.AndroidComposeView: void setCoroutineContext(kotlin.coroutines.CoroutineContext)
+androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
+dagger.hilt.android.internal.migration.InjectedByHilt: boolean wasInjectedByHilt()
+dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule: HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule()
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String originatingRoot()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo,boolean)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ServiceComponentBuilder: _dagger_hilt_android_internal_builders_ServiceComponentBuilder()
+androidx.compose.ui.graphics.CanvasZHelper: void enableZ(android.graphics.Canvas,boolean)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui_release()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityPaneTitle(android.view.View,java.lang.CharSequence)
+androidx.activity.EdgeToEdgeApi29: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+com.voicejournal.app.ui.navigation.LogDetail$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.app.ActivityCompat$Api23Impl: void requestPermissions(android.app.Activity,java.lang.String[],int)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewTextChanged(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,java.lang.CharSequence)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.contentcapture.AndroidContentCaptureManager getContentCaptureManager$ui_release()
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize valueOf(java.lang.String)
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String rootPackage()
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String[] modules()
+androidx.compose.ui.input.pointer.MotionEventHelper: long toRawOffset-dBAh8RU(android.view.MotionEvent,int)
+dagger.hilt.internal.UnsafeCasts: java.lang.Object unsafeCast(java.lang.Object)
+dagger.hilt.android.internal.managers.FragmentComponentManager: FragmentComponentManager(androidx.fragment.app.Fragment)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: HiltViewModelFactory$2(dagger.hilt.android.internal.lifecycle.HiltViewModelFactory,dagger.hilt.android.internal.builders.ViewModelComponentBuilder)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: android.content.Context get()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.compose.ui.text.android.StaticLayoutFactory23: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillType(android.view.ViewStructure,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State[] values()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.lifecycle.ViewModel: void addCloseable(java.io.Closeable)
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Icon createWithAdaptiveBitmap(android.graphics.Bitmap)
+com.voicejournal.app.ui.navigation.PersonDetail$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromActivity(android.app.Activity,java.lang.Class)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+androidx.compose.ui.window.Api33Impl: android.window.OnBackInvokedCallback createBackCallback(kotlin.jvm.functions.Function0)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: android.view.LayoutInflater access$102(dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper,android.view.LayoutInflater)
+dagger.hilt.internal.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.String)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+dagger.hilt.android.internal.lifecycle.HiltWrapper_DefaultViewModelFactories_ActivityModule: HiltWrapper_DefaultViewModelFactories_ActivityModule()
+androidx.compose.ui.platform.ViewLayerVerificationHelper31: void setRenderEffect(android.view.View,androidx.compose.ui.graphics.RenderEffect)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillHints(android.view.ViewStructure,java.lang.String[])
+com.voicejournal.app.data.repository.VoiceLogBackup$Companion: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: DefaultViewModelFactories$InternalFactoryFactory(java.util.Map,dagger.hilt.android.internal.builders.ViewModelComponentBuilder)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: androidx.lifecycle.ViewModelProvider getViewModelProvider(androidx.lifecycle.ViewModelStoreOwner,android.content.Context)
+androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
+androidx.compose.ui.window.Api33Impl: void maybeRegisterBackCallback(android.view.View,java.lang.Object)
+androidx.compose.ui.platform.WrapperRenderNodeLayerHelperMethods: void onDescendantInvalidated(androidx.compose.ui.platform.AndroidComposeView)
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: java.lang.Object get()
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
+androidx.core.view.ViewCompat$Api29Impl: java.util.List getSystemGestureExclusionRects(android.view.View)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat computeSystemWindowInsets(android.view.View,androidx.core.view.WindowInsetsCompat,android.graphics.Rect)
+androidx.core.view.ViewCompat$Api21Impl: void stopNestedScroll(android.view.View)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
+androidx.compose.ui.autofill.AutofillApi26Helper: java.lang.CharSequence textValue(android.view.autofill.AutofillValue)
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int fallbackOnLegacyTextField(android.view.inputmethod.HandwritingGesture,kotlin.jvm.functions.Function1)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillId(android.view.ViewStructure,android.view.autofill.AutofillId,int)
+androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
+dagger.hilt.android.migration.OptionalInjectCheck: boolean wasInjectedByHilt(androidx.fragment.app.Fragment)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: android.net.Uri getUri(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
+androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory: dagger.hilt.android.ActivityRetainedLifecycle provideActivityRetainedLifecycle()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo,long)
+com.voicejournal.app.ui.navigation.RecordFlow$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: SavedStateHandleModule_ProvideSavedStateHandleFactory(javax.inject.Provider)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isText(android.view.autofill.AutofillValue)
+androidx.compose.ui.graphics.layer.ViewLayer: boolean getCanUseCompositingLayer$ui_graphics_release()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performHandwritingGesture$foundation_release(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.HandwritingGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.lifecycle.ViewModel: java.lang.AutoCloseable getCloseable(java.lang.String)
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
+androidx.compose.ui.text.android.CanvasCompatS: void drawPatch(android.graphics.Canvas,android.graphics.NinePatch,android.graphics.Rect,android.graphics.Paint)
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper$1: ViewComponentManager$FragmentContextWrapper$1(dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper)
+androidx.compose.ui.autofill.AutofillCallback: void unregister(androidx.compose.ui.autofill.AndroidAutofill)
+dagger.hilt.android.internal.builders.FragmentComponentBuilder: dagger.hilt.android.components.FragmentComponent build()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+dagger.hilt.internal.generatesrootinput.GeneratesRootInputPropagatedData: java.lang.Class value()
+androidx.core.view.ViewCompat$Api29Impl: void setContentCaptureSession(android.view.View,androidx.core.view.contentcapture.ContentCaptureSessionCompat)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction[] values()
+dagger.hilt.InstallIn: java.lang.Class[] value()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModelProvider$Factory createInternal(android.app.Activity,androidx.lifecycle.ViewModelProvider$Factory)
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: androidx.lifecycle.SavedStateHandle provideSavedStateHandle(dagger.hilt.android.internal.managers.SavedStateHandleHolder)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ActivityComponentBuilder: _dagger_hilt_android_internal_builders_ActivityComponentBuilder()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getChild(android.view.accessibility.AccessibilityNodeInfo,int,int)
+androidx.core.view.ViewCompat$Api30Impl: boolean isImportantForContentCapture(android.view.View)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
+dagger.hilt.android.migration.OptionalInjectCheck: boolean wasInjectedByHilt(android.view.View)
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState[] values()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+dagger.hilt.android.internal.managers.FragmentComponentManager: java.lang.Object generatedComponent()
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: void throwIfOnClearedDispatched()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: boolean previewHandwritingGesture$foundation_release(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.PreviewableHandwritingGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,android.os.CancellationSignal)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: void addOnClearedListener(dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+dagger.hilt.android.migration.OptionalInjectCheck: boolean wasInjectedByHilt(android.app.Service)
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: boolean isInvalid()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+androidx.compose.ui.graphics.Api26Bitmap: android.graphics.Bitmap createBitmap-x__-hDU$ui_graphics_release(int,int,int,boolean,androidx.compose.ui.graphics.colorspace.ColorSpace)
+androidx.compose.foundation.text.input.internal.undo.TextEditType: androidx.compose.foundation.text.input.internal.undo.TextEditType valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayer: void setCameraDistancePx(float)
+androidx.compose.ui.window.PopupLayout: int getDisplayHeight()
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode valueOf(java.lang.String)
+dagger.hilt.android.internal.managers.FragmentComponentManager: void initializeArguments(androidx.fragment.app.Fragment)
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.core.view.ViewCompat$Api30Impl: int getImportantForContentCapture(android.view.View)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: android.app.Application get()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: ActivityRetainedComponentManager$ActivityRetainedComponentViewModel(dagger.hilt.android.components.ActivityRetainedComponent,dagger.hilt.android.internal.managers.SavedStateHandleHolder)
+com.voicejournal.app.data.local.db.VoiceJournalDatabase: VoiceJournalDatabase()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
+com.voicejournal.app.data.repository.BackupData$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelFactoriesEntryPoint: java.util.Map getHiltViewModelMap()
+com.voicejournal.app.data.repository.VoiceNoteBackup$Companion: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelModule: java.util.Map hiltViewModelMap()
+dagger.hilt.internal.UnsafeCasts: UnsafeCasts()
+androidx.compose.ui.text.input.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] aggregatedDeps()
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
+kotlinx.serialization.json.ClassDiscriminatorMode: kotlinx.serialization.json.ClassDiscriminatorMode[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
+androidx.compose.ui.platform.AndroidViewConfigurationApi34: float getScaledHandwritingGestureLineMargin(android.view.ViewConfiguration)
+dagger.hilt.android.internal.managers.BroadcastReceiverComponentManager: BroadcastReceiverComponentManager()
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_internal_ComponentEntryPoint: dagger_hilt_internal_ComponentEntryPoint()
+dagger.hilt.android.migration.OptionalInjectCheck: boolean wasInjectedByHilt(android.content.BroadcastReceiver)
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] defineComponentDeps()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
+dagger.hilt.android.internal.managers.ViewComponentManager: java.lang.Object createComponent()
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: androidx.fragment.app.FragmentActivity provideFragmentActivity(android.app.Activity)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedFling(android.view.View,float,float,boolean)
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation valueOf(java.lang.String)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.Object createRangeInfo(int,float,float,float)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_FragmentComponentBuilder: _dagger_hilt_android_internal_builders_FragmentComponentBuilder()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: androidx.lifecycle.ViewModel create(java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
+androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui_release()
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+dagger.hilt.android.internal.managers.FragmentComponentManager: android.content.ContextWrapper createContextWrapper(android.view.LayoutInflater,androidx.fragment.app.Fragment)
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType valueOf(java.lang.String)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetLeft(android.view.DisplayCutout)
+androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.autofill.AutofillApi23Helper: android.view.ViewStructure newChild(android.view.ViewStructure,int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: void setStateDescription(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+androidx.compose.ui.text.font.FontWeightAdjustmentHelperApi31: int fontWeightAdjustment(android.content.Context)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.DrawChildContainer getContainer()
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode valueOf(java.lang.String)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
+dagger.hilt.android.internal.builders.ActivityComponentBuilder: dagger.hilt.android.components.ActivityComponent build()
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+dagger.hilt.android.EntryPointAccessors: EntryPointAccessors()
+androidx.lifecycle.ViewModel: void clear$lifecycle_viewmodel_release()
+androidx.compose.ui.platform.AndroidComposeView: void setDensity(androidx.compose.ui.unit.Density)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat buildCollectionItemInfoCompat(boolean,int,int,int,int,boolean,java.lang.String,java.lang.String)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedScroll(android.view.View,int,int,int,int,int[])
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.core.view.ViewCompat$Api21Impl: boolean startNestedScroll(android.view.View,int)
+androidx.core.view.ViewCompat$Api29Impl: void saveAttributeDataForStyleable(android.view.View,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray,int,int)
+androidx.compose.ui.text.platform.Api28Impl: android.text.style.TypefaceSpan createTypefaceSpan(android.graphics.Typeface)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: androidx.lifecycle.ViewModel create(java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
+androidx.compose.foundation.text.input.internal.undo.TextEditType: androidx.compose.foundation.text.input.internal.undo.TextEditType[] values()
+androidx.compose.ui.window.Api33Impl: void maybeUnregisterBackCallback(android.view.View,java.lang.Object)
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledHorizontalScrollFactor(android.view.ViewConfiguration)
+dagger.hilt.android.internal.managers.HiltWrapper_SavedStateHandleModule: HiltWrapper_SavedStateHandleModule()
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory newInstance(java.util.Map,dagger.hilt.android.internal.builders.ViewModelComponentBuilder)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
+dagger.hilt.android.migration.OptionalInjectCheck: OptionalInjectCheck()
+androidx.compose.ui.window.PopupLayout: void getParams$ui_release$annotations()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performRemoveSpaceGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.RemoveSpaceGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory: DefaultViewModelFactories_InternalFactoryFactory_Factory(javax.inject.Provider,javax.inject.Provider)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setUniqueId(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder: _dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory: java.lang.Object get()
+androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui_release()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus valueOf(java.lang.String)
+androidx.compose.ui.platform.DrawChildContainer: int getChildCount()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemRowTitle(java.lang.Object)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawDoubleRoundRect(android.graphics.Canvas,android.graphics.RectF,float[],android.graphics.RectF,float[],android.graphics.Paint)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performSelectionOnLegacyTextField-8ffj60Q(long,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performDeletion-Sb-Bc2M(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,long,boolean)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$1: androidx.lifecycle.ViewModel create(java.lang.Class)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Rect,java.util.List)
+androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getParent(android.view.accessibility.AccessibilityNodeInfo,int)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+dagger.hilt.android.lifecycle.HiltViewModelExtensions$addCreationCallback$1$1: HiltViewModelExtensions$addCreationCallback$1$1(kotlin.jvm.functions.Function1)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String test()
+dagger.hilt.android.EarlyEntryPoints: boolean hasAnnotationReflection(java.lang.Class,java.lang.Class)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorRawSize(long)
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
+dagger.hilt.android.internal.modules.ActivityModule: ActivityModule()
+androidx.compose.ui.platform.ViewLayer: long getOwnerViewId()
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace(android.graphics.ColorSpace)
+com.voicejournal.app.ui.navigation.Categories: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] earlyEntryPointDeps()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ServiceComponent: _dagger_hilt_android_components_ServiceComponent()
+androidx.compose.ui.text.android.StaticLayoutFactory28: void setUseLineSpacingFromFallbacks(android.text.StaticLayout$Builder,boolean)
+kotlinx.serialization.json.JsonArray$Companion: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder: dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder view(android.view.View)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performHandwritingGesture$foundation_release(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.HandwritingGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory$InstanceHolder: dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory access$000()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
+com.voicejournal.app.ui.navigation.Settings: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+androidx.core.app.ActivityCompat$Api23Impl: void onSharedElementsReady(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Insets,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Insets)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.core.view.ViewCompat$Api21Impl: float getZ(android.view.View)
+androidx.room.Index$Order: androidx.room.Index$Order valueOf(java.lang.String)
+dagger.hilt.android.internal.builders.ServiceComponentBuilder: dagger.hilt.android.components.ServiceComponent build()
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: void removeOnClearedListener(dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetRight(android.view.DisplayCutout)
+androidx.compose.ui.autofill.AutofillApi23Helper: int addChildCount(android.view.ViewStructure,int)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isList(android.view.autofill.AutofillValue)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+dagger.hilt.android.migration.OptionalInjectCheck: boolean wasInjectedByHilt(androidx.activity.ComponentActivity)
+androidx.navigation.compose.ComposeNavigator: ComposeNavigator()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
+androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
+androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
+androidx.core.view.ViewCompat$Api21Impl: boolean hasNestedScrollingParent(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+dagger.hilt.android.internal.modules.ApplicationContextModule: android.content.Context provideContext()
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelFactoriesEntryPoint: java.util.Map getHiltViewModelAssistedMap()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager: dagger.hilt.android.components.ActivityRetainedComponent createComponent()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: androidx.lifecycle.ViewModel create(kotlin.reflect.KClass,androidx.lifecycle.viewmodel.CreationExtras)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void getBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.autofill.AutofillId newAutofillId(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+dagger.hilt.android.internal.managers.BroadcastReceiverComponentManager: java.lang.Object generatedComponent(android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+dagger.hilt.android.internal.modules.ActivityModule: androidx.fragment.app.FragmentActivity provideFragmentActivity(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performDeletionOnLegacyTextField-vJH6DeI(long,androidx.compose.ui.text.AnnotatedString,boolean,kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.ViewLayer: float getCameraDistancePx()
+dagger.hilt.android.HiltAndroidApp: java.lang.Class value()
+dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory: dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory create(dagger.hilt.android.internal.modules.ApplicationContextModule)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: HiltViewModelFactory(java.util.Map,androidx.lifecycle.ViewModelProvider$Factory,dagger.hilt.android.internal.builders.ViewModelComponentBuilder)
+dagger.hilt.android.internal.managers.SavedStateHandleHolder: void clear()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: boolean previewHandwritingGesture$foundation_release(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.PreviewableHandwritingGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.os.CancellationSignal)
+dagger.hilt.android.internal.managers.ServiceComponentManager: java.lang.Object createComponent()
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: ViewComponentManager$FragmentContextWrapper(android.content.Context,androidx.fragment.app.Fragment)
+dagger.hilt.internal.Preconditions: void checkArgument(boolean,java.lang.String,java.lang.Object[])
+dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper: androidx.fragment.app.Fragment getFragment()
+androidx.compose.ui.graphics.AndroidGraphicsContext$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
+androidx.compose.ui.platform.ViewLayer: long getLayerId()
+com.voicejournal.app.MainActivity: MainActivity()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performJoinOrSplitGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.JoinOrSplitGesture,androidx.compose.ui.text.AnnotatedString,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+androidx.core.os.BundleCompat$Api33Impl: java.lang.Object[] getParcelableArray(android.os.Bundle,java.lang.String,java.lang.Class)
+androidx.compose.foundation.text.input.internal.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+androidx.core.view.ViewCompat$Api21Impl: void setTranslationZ(android.view.View,float)
+androidx.compose.ui.text.input.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
+dagger.hilt.android.internal.builders.ServiceComponentBuilder: dagger.hilt.android.internal.builders.ServiceComponentBuilder service(android.app.Service)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
+androidx.compose.material3.MinimumInteractiveModifier: MinimumInteractiveModifier()
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.graphics.WrapperVerificationHelperMethods: void setBlendMode-GB0RdKg(android.graphics.Paint,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+dagger.hilt.android.lifecycle.RetainedLifecycle: void addOnClearedListener(dagger.hilt.android.lifecycle.RetainedLifecycle$OnClearedListener)
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_internal_GeneratedEntryPoint: dagger_hilt_internal_GeneratedEntryPoint()
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+androidx.core.view.ViewCompat$Api28Impl: java.lang.Object requireViewById(android.view.View,int)
+dagger.hilt.EntryPoints: EntryPoints()
+androidx.compose.ui.platform.AndroidComposeView: boolean getScrollCaptureInProgress$ui_release()
+dagger.hilt.internal.definecomponent.DefineComponentClasses: java.lang.String builder()
+dagger.hilt.android.internal.modules.HiltWrapper_ActivityModule: HiltWrapper_ActivityModule()
+androidx.core.os.BundleApi21ImplKt: void putSize(android.os.Bundle,java.lang.String,android.util.Size)
+kotlinx.serialization.json.JsonNull: kotlinx.serialization.KSerializer serializer()
+dagger.hilt.internal.Preconditions: void checkState(boolean,java.lang.String,java.lang.Object[])
+dagger.hilt.processor.internal.generatesrootinput.codegen.dagger_hilt_android_AndroidEntryPoint: dagger_hilt_android_AndroidEntryPoint()
+dagger.hilt.android.flags.FragmentGetContextFix$FragmentGetContextFixModule: java.util.Set disableFragmentGetContextFix()
+androidx.graphics.path.PathIteratorPreApi34Impl: void destroyInternalPathIterator(long)
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: androidx.fragment.app.FragmentActivity get()
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewComponent: _dagger_hilt_android_components_ViewComponent()
+androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+dagger.hilt.android.internal.managers.FragmentComponentManager: android.content.ContextWrapper createContextWrapper(android.content.Context,androidx.fragment.app.Fragment)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+androidx.compose.ui.platform.ViewLayer: void setInvalidated(boolean)
+androidx.compose.foundation.layout.FlowLayoutOverflow$OverflowType: androidx.compose.foundation.layout.FlowLayoutOverflow$OverflowType valueOf(java.lang.String)
+androidx.compose.ui.text.android.CanvasCompatQ: void disableZ(android.graphics.Canvas)
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+androidx.compose.ui.platform.ViewLayerContainer: void dispatchGetDisplayList()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newVirtualViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+androidx.compose.foundation.Api31Impl: float getDistance(android.widget.EdgeEffect)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetTop(android.view.DisplayCutout)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: void handleException(kotlin.coroutines.CoroutineContext,java.lang.Throwable)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+dagger.hilt.android.internal.legacy.AggregatedElementProxy: java.lang.Class value()
+androidx.compose.foundation.text.input.internal.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+dagger.hilt.android.internal.managers.SavedStateHandleModule_ProvideSavedStateHandleFactory: java.lang.Object get()
+dagger.hilt.android.internal.modules.ActivityModule: android.content.Context provideContext(android.app.Activity)
+androidx.core.graphics.Insets$Api29Impl: android.graphics.Insets of(int,int,int,int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+dagger.hilt.android.internal.managers.SavedStateHandleModule: androidx.lifecycle.SavedStateHandle provideSavedStateHandle(dagger.hilt.android.internal.managers.SavedStateHandleHolder)
+dagger.hilt.internal.aliasof.AliasOfPropagatedData: java.lang.Class alias()
+androidx.lifecycle.ProcessLifecycleOwner$Api29Impl: void registerActivityLifecycleCallbacks(android.app.Activity,android.app.Application$ActivityLifecycleCallbacks)
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: void setTextLocales(androidx.compose.ui.text.platform.AndroidTextPaint,androidx.compose.ui.text.intl.LocaleList)
+com.voicejournal.app.ui.navigation.PeopleList: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.ViewLayer$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Drawable loadDrawable(android.graphics.drawable.Icon,android.content.Context)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: boolean isTextSelectable(android.view.accessibility.AccessibilityNodeInfo)
+com.voicejournal.app.data.repository.CategoryBackup$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.text.android.CanvasCompatM: void drawTextRun(android.graphics.Canvas,char[],int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+dagger.hilt.android.flags.FragmentGetContextFix$FragmentGetContextFixModule: FragmentGetContextFix$FragmentGetContextFixModule()
+dagger.hilt.android.internal.builders.ViewComponentBuilder: dagger.hilt.android.components.ViewComponent build()
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorPeek(long)
+androidx.compose.ui.graphics.layer.ViewLayer: androidx.compose.ui.graphics.CanvasHolder getCanvasHolder()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory: dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory create()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintList(android.view.View,android.content.res.ColorStateList)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
+dagger.hilt.android.migration.CustomInjection: CustomInjection()
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName[] values()
+kotlin.jvm.internal.Lambda: int getArity()
+dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder: dagger.hilt.android.components.ActivityRetainedComponent build()
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedLifecycleEntryPoint: dagger.hilt.android.ActivityRetainedLifecycle getActivityRetainedLifecycle()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+dagger.hilt.internal.componenttreedeps.ComponentTreeDeps: java.lang.Class[] aliasOfDeps()
+dagger.hilt.android.internal.managers.ServiceComponentManager$ServiceComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.ServiceComponentBuilder serviceComponentBuilder()
+androidx.core.view.ViewCompat$Api21Impl: void setElevation(android.view.View,float)
+dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ViewWithFragmentComponent: _dagger_hilt_android_components_ViewWithFragmentComponent()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.ui.text.AnnotatedString,kotlin.jvm.functions.Function1)
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$LifecycleModule: dagger.hilt.android.ActivityRetainedLifecycle provideActivityRetainedLifecycle()
+dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps: java.lang.String[] components()
+dagger.hilt.android.lifecycle.HiltViewModelExtensions$addCreationCallback$1$1: androidx.lifecycle.ViewModel invoke(java.lang.Object)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.navigation.serialization.InternalType: androidx.navigation.serialization.InternalType valueOf(java.lang.String)
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory: androidx.lifecycle.ViewModelProvider$Factory fromFragment(androidx.fragment.app.Fragment,androidx.lifecycle.ViewModelProvider$Factory)
+androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType valueOf(java.lang.String)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
+dagger.hilt.android.internal.migration.HasCustomInject: void customInject()
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.compose.ui.platform.TextToolbarHelperMethods: void invalidateContentRect(android.view.ActionMode)
+dagger.hilt.android.EntryPointAccessors: java.lang.Object fromFragment(androidx.fragment.app.Fragment,java.lang.Class)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+dagger.hilt.android.internal.lifecycle.RetainedLifecycleImpl: void dispatchOnCleared()
+javax.inject.Named: java.lang.String value()
+androidx.compose.ui.platform.TextToolbarHelperMethods: android.view.ActionMode startActionMode(android.view.View,android.view.ActionMode$Callback,int)
+com.voicejournal.app.data.repository.VoiceLogCategoryBackup$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,long)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModel create(java.lang.Class,androidx.lifecycle.viewmodel.CreationExtras)
+dagger.hilt.android.internal.managers.ActivityComponentManager$ActivityComponentBuilderEntryPoint: dagger.hilt.android.internal.builders.ActivityComponentBuilder activityComponentBuilder()
+dagger.hilt.internal.definecomponent.DefineComponentNoParent: DefineComponentNoParent()
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String root()
+androidx.compose.ui.autofill.AutofillCallback: void register(androidx.compose.ui.autofill.AndroidAutofill)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.core.app.NotificationManagerCompat$Api24Impl: int getImportance(android.app.NotificationManager)
+dagger.hilt.android.internal.managers.ViewComponentManager: android.content.Context unwrap(android.content.Context,java.lang.Class)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+dagger.hilt.internal.GeneratedComponentManagerHolder: dagger.hilt.internal.GeneratedComponentManager componentManager()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
+dagger.hilt.android.internal.modules.ActivityModule_ProvideFragmentActivityFactory: ActivityModule_ProvideFragmentActivityFactory(javax.inject.Provider)
+androidx.compose.foundation.Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+androidx.compose.foundation.text.input.internal.Api34LegacyPerformHandwritingGestureImpl: void performHandwritingGesture(androidx.compose.foundation.text.LegacyTextFieldState,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.view.inputmethod.HandwritingGesture,androidx.compose.ui.platform.ViewConfiguration,java.util.concurrent.Executor,java.util.function.IntConsumer,kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api26Impl: android.view.autofill.AutofillId getAutofillId(android.view.View)
+dagger.hilt.android.internal.managers.ActivityComponentManager: ActivityComponentManager(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+dagger.hilt.android.internal.managers.SavedStateHandleModule: SavedStateHandleModule()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawDoubleRoundRect(android.graphics.Canvas,android.graphics.RectF,float,float,android.graphics.RectF,float,float,android.graphics.Paint)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performJoinOrSplitGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.JoinOrSplitGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
+androidx.compose.ui.text.android.CanvasCompatQ: void enableZ(android.graphics.Canvas)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorNext(long,float[],int)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory: androidx.lifecycle.ViewModel create(java.lang.Class)
+dagger.hilt.android.internal.managers.ServiceComponentManager: ServiceComponentManager(android.app.Service)
+dagger.hilt.android.lifecycle.HiltViewModelExtensions$addCreationCallback$1$1: java.lang.Object invoke(java.lang.Object)
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$2: androidx.lifecycle.ViewModel create(java.lang.Class)
+androidx.core.view.ViewCompat$Api21Impl: boolean isImportantForAccessibility(android.view.View)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setQueryFromAppProcessEnabled(android.view.accessibility.AccessibilityNodeInfo,android.view.View,boolean)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setTextStyle(android.view.ViewStructure,float,int,int,int)
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,android.graphics.Path)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setTextSelectable(android.view.accessibility.AccessibilityNodeInfo,boolean)
+dagger.hilt.android.internal.managers.FragmentComponentManager: android.content.Context findActivity(android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+dagger.hilt.internal.aggregatedroot.AggregatedRoot: java.lang.String[] rootSimpleNames()
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$ActivityModule: java.util.Map viewModelKeys()
+androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.core.graphics.drawable.IconCompat$Api30Impl: android.graphics.drawable.Icon createWithAdaptiveBitmapContentUri(android.net.Uri)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentViewModel: dagger.hilt.android.components.ActivityRetainedComponent getComponent()
+kotlin.random.Random: Random()
