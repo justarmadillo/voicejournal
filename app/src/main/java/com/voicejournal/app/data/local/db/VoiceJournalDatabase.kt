@@ -21,7 +21,7 @@ import com.voicejournal.app.data.local.db.entity.VoiceNoteEntity
         VoiceLogCategoryCrossRef::class,
         VoiceNoteEntity::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 abstract class VoiceJournalDatabase : RoomDatabase() {

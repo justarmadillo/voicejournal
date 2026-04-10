@@ -35,7 +35,11 @@ class VoiceLogRepository @Inject constructor(
         ) { logs, persons, noteCounts ->
             val personMap = persons.associateBy { it.id }
             val noteCountMap = noteCounts.associate { it.voiceLogId to it.count }
-            logs.map { it.toDomain(personMap[it.voiceLog.personId]?.name ?: "Unknown", noteCountMap[it.voiceLog.id] ?: 0) }
+            // Drafts first, then by date
+            logs.map { log ->
+                val name = if (log.voiceLog.isDraft) "Draft" else personMap[log.voiceLog.personId]?.name ?: "Unknown"
+                log.toDomain(name, noteCountMap[log.voiceLog.id] ?: 0)
+            }.sortedWith(compareByDescending<VoiceLog> { it.isDraft }.thenByDescending { it.createdAt })
         }
     }
 
@@ -67,6 +71,38 @@ class VoiceLogRepository @Inject constructor(
 
     fun getCategoryStatsForPerson(personId: String): Flow<List<CategoryCount>> {
         return voiceLogDao.getCategoryStatsForPerson(personId)
+    }
+
+    suspend fun saveDraft(audioFileName: String, durationMs: Long): String {
+        val now = DateTimeUtil.now()
+        val logId = UUID.randomUUID().toString()
+        val entity = VoiceLogEntity(
+            id = logId,
+            personId = null,
+            audioFileName = audioFileName,
+            durationMs = durationMs,
+            isDraft = true,
+            createdAt = now,
+            updatedAt = now
+        )
+        voiceLogDao.insert(entity)
+        return logId
+    }
+
+    suspend fun finalizeDraft(
+        draftId: String,
+        personId: String,
+        categoryIds: List<String>,
+        notes: String? = null
+    ) {
+        voiceLogDao.finalizeDraft(draftId, personId, notes, DateTimeUtil.now())
+        voiceLogCategoryDao.deleteByVoiceLogId(draftId)
+        if (categoryIds.isNotEmpty()) {
+            val crossRefs = categoryIds.map { catId ->
+                VoiceLogCategoryCrossRef(voiceLogId = draftId, categoryId = catId)
+            }
+            voiceLogCategoryDao.insertAll(crossRefs)
+        }
     }
 
     suspend fun create(
@@ -118,18 +154,7 @@ class VoiceLogRepository @Inject constructor(
 
     suspend fun delete(voiceLog: VoiceLog) {
         audioFileManager.deleteFile(voiceLog.audioFileName)
-        voiceLogDao.delete(
-            VoiceLogEntity(
-                id = voiceLog.id,
-                personId = voiceLog.personId,
-                audioFileName = voiceLog.audioFileName,
-                durationMs = voiceLog.durationMs,
-                title = voiceLog.title,
-                notes = voiceLog.notes,
-                createdAt = voiceLog.createdAt,
-                updatedAt = voiceLog.updatedAt
-            )
-        )
+        voiceLogDao.deleteById(voiceLog.id)
     }
 
     private fun VoiceLogWithCategories.toDomain(personName: String, noteCount: Int = 0) = VoiceLog(
@@ -150,6 +175,7 @@ class VoiceLogRepository @Inject constructor(
             )
         },
         voiceNoteCount = noteCount,
+        isDraft = voiceLog.isDraft,
         createdAt = voiceLog.createdAt,
         updatedAt = voiceLog.updatedAt
     )

@@ -13,6 +13,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Label
 import androidx.compose.material.icons.filled.People
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -36,6 +37,7 @@ import com.voicejournal.app.ui.navigation.Categories
 import com.voicejournal.app.ui.navigation.Home as HomeRoute
 import com.voicejournal.app.ui.navigation.NavGraph
 import com.voicejournal.app.ui.navigation.PeopleList
+import com.voicejournal.app.ui.navigation.Search as SearchRoute
 import com.voicejournal.app.ui.navigation.Settings as SettingsRoute
 import com.voicejournal.app.ui.theme.VoiceJournalTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -84,6 +86,7 @@ private fun MainContent() {
     val bottomNavItems = listOf(
         BottomNavItem("Home", Icons.Default.Home, HomeRoute),
         BottomNavItem("People", Icons.Default.People, PeopleList),
+        BottomNavItem("Search", Icons.Default.Search, SearchRoute),
         BottomNavItem("Categories", Icons.Default.Label, Categories),
         BottomNavItem("Settings", Icons.Default.Settings, SettingsRoute)
     )

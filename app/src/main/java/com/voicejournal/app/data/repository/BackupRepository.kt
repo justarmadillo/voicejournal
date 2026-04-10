@@ -45,7 +45,7 @@ data class PersonBackup(val id: String, val name: String, val notes: String? = n
 @Serializable
 data class CategoryBackup(val id: String, val name: String, val colorHex: String? = null, val createdAt: Long, val updatedAt: Long)
 @Serializable
-data class VoiceLogBackup(val id: String, val personId: String, val audioFileName: String, val durationMs: Long, val title: String? = null, val notes: String? = null, val createdAt: Long, val updatedAt: Long)
+data class VoiceLogBackup(val id: String, val personId: String? = null, val audioFileName: String, val durationMs: Long, val title: String? = null, val notes: String? = null, val isDraft: Boolean = false, val createdAt: Long, val updatedAt: Long)
 @Serializable
 data class VoiceLogCategoryBackup(val voiceLogId: String, val categoryId: String)
 @Serializable
@@ -78,7 +78,7 @@ class BackupRepository @Inject constructor(
         val backupData = BackupData(
             persons = persons.map { PersonBackup(it.id, it.name, it.notes, it.createdAt, it.updatedAt) },
             categories = categories.map { CategoryBackup(it.id, it.name, it.colorHex, it.createdAt, it.updatedAt) },
-            voiceLogs = voiceLogs.map { VoiceLogBackup(it.id, it.personId, it.audioFileName, it.durationMs, it.title, it.notes, it.createdAt, it.updatedAt) },
+            voiceLogs = voiceLogs.map { VoiceLogBackup(it.id, it.personId, it.audioFileName, it.durationMs, it.title, it.notes, it.isDraft, it.createdAt, it.updatedAt) },
             voiceLogCategories = crossRefs.map { VoiceLogCategoryBackup(it.voiceLogId, it.categoryId) },
             voiceNotes = voiceNotes.map { VoiceNoteBackup(it.id, it.voiceLogId, it.audioFileName, it.durationMs, it.textNote, it.createdAt) }
         )
@@ -154,8 +154,10 @@ class BackupRepository @Inject constructor(
                     categoryDao.insert(CategoryEntity(it.id, it.name, it.colorHex, it.createdAt, it.updatedAt))
                 }
                 data.voiceLogs.forEach {
-                    personDao.getAllSync().find { p -> p.id == it.personId } ?: return@forEach  // skip orphans
-                    voiceLogDao.insert(VoiceLogEntity(it.id, it.personId, it.audioFileName, it.durationMs, it.title, it.notes, it.createdAt, it.updatedAt))
+                    if (!it.isDraft && it.personId != null) {
+                        personDao.getAllSync().find { p -> p.id == it.personId } ?: return@forEach
+                    }
+                    voiceLogDao.insert(VoiceLogEntity(it.id, it.personId, it.audioFileName, it.durationMs, it.title, it.notes, it.isDraft, it.createdAt, it.updatedAt))
                 }
                 data.voiceLogCategories.forEach {
                     try {

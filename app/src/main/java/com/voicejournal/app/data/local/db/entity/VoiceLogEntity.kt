@@ -25,13 +25,15 @@ data class VoiceLogEntity(
     @PrimaryKey
     val id: String,
     @ColumnInfo(name = "person_id")
-    val personId: String,
+    val personId: String? = null,
     @ColumnInfo(name = "audio_file_name")
     val audioFileName: String,
     @ColumnInfo(name = "duration_ms")
     val durationMs: Long,
     val title: String? = null,
     val notes: String? = null,
+    @ColumnInfo(name = "is_draft", defaultValue = "0")
+    val isDraft: Boolean = false,
     @ColumnInfo(name = "created_at")
     val createdAt: Long,
     @ColumnInfo(name = "updated_at")

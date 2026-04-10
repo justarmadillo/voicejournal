@@ -48,6 +48,12 @@ interface VoiceLogDao {
     @Query("UPDATE voice_logs SET notes = :notes, updated_at = :updatedAt WHERE id = :id")
     suspend fun updateNotes(id: String, notes: String, updatedAt: Long)
 
+    @Query("UPDATE voice_logs SET person_id = :personId, notes = :notes, is_draft = 0, updated_at = :updatedAt WHERE id = :id")
+    suspend fun finalizeDraft(id: String, personId: String, notes: String?, updatedAt: Long)
+
+    @Query("DELETE FROM voice_logs WHERE id = :id")
+    suspend fun deleteById(id: String)
+
     @Update
     suspend fun update(voiceLog: VoiceLogEntity)
 

@@ -35,8 +35,12 @@ import com.voicejournal.app.ui.people.PeopleListViewModel;
 import com.voicejournal.app.ui.people.PeopleListViewModel_HiltModules;
 import com.voicejournal.app.ui.people.PersonDetailViewModel;
 import com.voicejournal.app.ui.people.PersonDetailViewModel_HiltModules;
+import com.voicejournal.app.ui.record.FinalizeDraftViewModel;
+import com.voicejournal.app.ui.record.FinalizeDraftViewModel_HiltModules;
 import com.voicejournal.app.ui.record.RecordFlowViewModel;
 import com.voicejournal.app.ui.record.RecordFlowViewModel_HiltModules;
+import com.voicejournal.app.ui.search.SearchViewModel;
+import com.voicejournal.app.ui.search.SearchViewModel_HiltModules;
 import com.voicejournal.app.ui.settings.SettingsViewModel;
 import com.voicejournal.app.ui.settings.SettingsViewModel_HiltModules;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -400,7 +404,7 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(7).put(LazyClassKeyProvider.com_voicejournal_app_ui_categories_CategoriesViewModel, CategoriesViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_home_HomeViewModel, HomeViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_logdetail_LogDetailViewModel, LogDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PeopleListViewModel, PeopleListViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PersonDetailViewModel, PersonDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_RecordFlowViewModel, RecordFlowViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_settings_SettingsViewModel, SettingsViewModel_HiltModules.KeyModule.provide()).build());
+      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(9).put(LazyClassKeyProvider.com_voicejournal_app_ui_categories_CategoriesViewModel, CategoriesViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_FinalizeDraftViewModel, FinalizeDraftViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_home_HomeViewModel, HomeViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_logdetail_LogDetailViewModel, LogDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PeopleListViewModel, PeopleListViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PersonDetailViewModel, PersonDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_RecordFlowViewModel, RecordFlowViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_search_SearchViewModel, SearchViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_voicejournal_app_ui_settings_SettingsViewModel, SettingsViewModel_HiltModules.KeyModule.provide()).build());
     }
 
     @Override
@@ -420,25 +424,41 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_voicejournal_app_ui_record_RecordFlowViewModel = "com.voicejournal.app.ui.record.RecordFlowViewModel";
+      static String com_voicejournal_app_ui_record_FinalizeDraftViewModel = "com.voicejournal.app.ui.record.FinalizeDraftViewModel";
+
+      static String com_voicejournal_app_ui_home_HomeViewModel = "com.voicejournal.app.ui.home.HomeViewModel";
 
       static String com_voicejournal_app_ui_categories_CategoriesViewModel = "com.voicejournal.app.ui.categories.CategoriesViewModel";
+
+      static String com_voicejournal_app_ui_search_SearchViewModel = "com.voicejournal.app.ui.search.SearchViewModel";
+
+      static String com_voicejournal_app_ui_record_RecordFlowViewModel = "com.voicejournal.app.ui.record.RecordFlowViewModel";
+
+      static String com_voicejournal_app_ui_people_PeopleListViewModel = "com.voicejournal.app.ui.people.PeopleListViewModel";
 
       static String com_voicejournal_app_ui_logdetail_LogDetailViewModel = "com.voicejournal.app.ui.logdetail.LogDetailViewModel";
 
       static String com_voicejournal_app_ui_people_PersonDetailViewModel = "com.voicejournal.app.ui.people.PersonDetailViewModel";
 
-      static String com_voicejournal_app_ui_home_HomeViewModel = "com.voicejournal.app.ui.home.HomeViewModel";
-
       static String com_voicejournal_app_ui_settings_SettingsViewModel = "com.voicejournal.app.ui.settings.SettingsViewModel";
 
-      static String com_voicejournal_app_ui_people_PeopleListViewModel = "com.voicejournal.app.ui.people.PeopleListViewModel";
+      @KeepFieldType
+      FinalizeDraftViewModel com_voicejournal_app_ui_record_FinalizeDraftViewModel2;
+
+      @KeepFieldType
+      HomeViewModel com_voicejournal_app_ui_home_HomeViewModel2;
+
+      @KeepFieldType
+      CategoriesViewModel com_voicejournal_app_ui_categories_CategoriesViewModel2;
+
+      @KeepFieldType
+      SearchViewModel com_voicejournal_app_ui_search_SearchViewModel2;
 
       @KeepFieldType
       RecordFlowViewModel com_voicejournal_app_ui_record_RecordFlowViewModel2;
 
       @KeepFieldType
-      CategoriesViewModel com_voicejournal_app_ui_categories_CategoriesViewModel2;
+      PeopleListViewModel com_voicejournal_app_ui_people_PeopleListViewModel2;
 
       @KeepFieldType
       LogDetailViewModel com_voicejournal_app_ui_logdetail_LogDetailViewModel2;
@@ -447,13 +467,7 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
       PersonDetailViewModel com_voicejournal_app_ui_people_PersonDetailViewModel2;
 
       @KeepFieldType
-      HomeViewModel com_voicejournal_app_ui_home_HomeViewModel2;
-
-      @KeepFieldType
       SettingsViewModel com_voicejournal_app_ui_settings_SettingsViewModel2;
-
-      @KeepFieldType
-      PeopleListViewModel com_voicejournal_app_ui_people_PeopleListViewModel2;
     }
   }
 
@@ -468,6 +482,8 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     private Provider<CategoriesViewModel> categoriesViewModelProvider;
 
+    private Provider<FinalizeDraftViewModel> finalizeDraftViewModelProvider;
+
     private Provider<HomeViewModel> homeViewModelProvider;
 
     private Provider<LogDetailViewModel> logDetailViewModelProvider;
@@ -477,6 +493,8 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
     private Provider<PersonDetailViewModel> personDetailViewModelProvider;
 
     private Provider<RecordFlowViewModel> recordFlowViewModelProvider;
+
+    private Provider<SearchViewModel> searchViewModelProvider;
 
     private Provider<SettingsViewModel> settingsViewModelProvider;
 
@@ -494,17 +512,19 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
       this.categoriesViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
-      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
-      this.logDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
-      this.peopleListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
-      this.personDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
-      this.recordFlowViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
-      this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
+      this.finalizeDraftViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
+      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
+      this.logDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
+      this.peopleListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.personDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
+      this.recordFlowViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
+      this.searchViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
+      this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(7).put(LazyClassKeyProvider.com_voicejournal_app_ui_categories_CategoriesViewModel, ((Provider) categoriesViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_home_HomeViewModel, ((Provider) homeViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_logdetail_LogDetailViewModel, ((Provider) logDetailViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PeopleListViewModel, ((Provider) peopleListViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PersonDetailViewModel, ((Provider) personDetailViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_RecordFlowViewModel, ((Provider) recordFlowViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_settings_SettingsViewModel, ((Provider) settingsViewModelProvider)).build());
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(9).put(LazyClassKeyProvider.com_voicejournal_app_ui_categories_CategoriesViewModel, ((Provider) categoriesViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_FinalizeDraftViewModel, ((Provider) finalizeDraftViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_home_HomeViewModel, ((Provider) homeViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_logdetail_LogDetailViewModel, ((Provider) logDetailViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PeopleListViewModel, ((Provider) peopleListViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_people_PersonDetailViewModel, ((Provider) personDetailViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_record_RecordFlowViewModel, ((Provider) recordFlowViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_search_SearchViewModel, ((Provider) searchViewModelProvider)).put(LazyClassKeyProvider.com_voicejournal_app_ui_settings_SettingsViewModel, ((Provider) settingsViewModelProvider)).build());
     }
 
     @Override
@@ -514,40 +534,50 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_voicejournal_app_ui_people_PersonDetailViewModel = "com.voicejournal.app.ui.people.PersonDetailViewModel";
-
-      static String com_voicejournal_app_ui_record_RecordFlowViewModel = "com.voicejournal.app.ui.record.RecordFlowViewModel";
-
       static String com_voicejournal_app_ui_categories_CategoriesViewModel = "com.voicejournal.app.ui.categories.CategoriesViewModel";
 
-      static String com_voicejournal_app_ui_people_PeopleListViewModel = "com.voicejournal.app.ui.people.PeopleListViewModel";
+      static String com_voicejournal_app_ui_people_PersonDetailViewModel = "com.voicejournal.app.ui.people.PersonDetailViewModel";
 
-      static String com_voicejournal_app_ui_settings_SettingsViewModel = "com.voicejournal.app.ui.settings.SettingsViewModel";
+      static String com_voicejournal_app_ui_search_SearchViewModel = "com.voicejournal.app.ui.search.SearchViewModel";
+
+      static String com_voicejournal_app_ui_people_PeopleListViewModel = "com.voicejournal.app.ui.people.PeopleListViewModel";
 
       static String com_voicejournal_app_ui_home_HomeViewModel = "com.voicejournal.app.ui.home.HomeViewModel";
 
       static String com_voicejournal_app_ui_logdetail_LogDetailViewModel = "com.voicejournal.app.ui.logdetail.LogDetailViewModel";
 
-      @KeepFieldType
-      PersonDetailViewModel com_voicejournal_app_ui_people_PersonDetailViewModel2;
+      static String com_voicejournal_app_ui_settings_SettingsViewModel = "com.voicejournal.app.ui.settings.SettingsViewModel";
 
-      @KeepFieldType
-      RecordFlowViewModel com_voicejournal_app_ui_record_RecordFlowViewModel2;
+      static String com_voicejournal_app_ui_record_FinalizeDraftViewModel = "com.voicejournal.app.ui.record.FinalizeDraftViewModel";
+
+      static String com_voicejournal_app_ui_record_RecordFlowViewModel = "com.voicejournal.app.ui.record.RecordFlowViewModel";
 
       @KeepFieldType
       CategoriesViewModel com_voicejournal_app_ui_categories_CategoriesViewModel2;
 
       @KeepFieldType
-      PeopleListViewModel com_voicejournal_app_ui_people_PeopleListViewModel2;
+      PersonDetailViewModel com_voicejournal_app_ui_people_PersonDetailViewModel2;
 
       @KeepFieldType
-      SettingsViewModel com_voicejournal_app_ui_settings_SettingsViewModel2;
+      SearchViewModel com_voicejournal_app_ui_search_SearchViewModel2;
+
+      @KeepFieldType
+      PeopleListViewModel com_voicejournal_app_ui_people_PeopleListViewModel2;
 
       @KeepFieldType
       HomeViewModel com_voicejournal_app_ui_home_HomeViewModel2;
 
       @KeepFieldType
       LogDetailViewModel com_voicejournal_app_ui_logdetail_LogDetailViewModel2;
+
+      @KeepFieldType
+      SettingsViewModel com_voicejournal_app_ui_settings_SettingsViewModel2;
+
+      @KeepFieldType
+      FinalizeDraftViewModel com_voicejournal_app_ui_record_FinalizeDraftViewModel2;
+
+      @KeepFieldType
+      RecordFlowViewModel com_voicejournal_app_ui_record_RecordFlowViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -574,22 +604,28 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
           case 0: // com.voicejournal.app.ui.categories.CategoriesViewModel 
           return (T) new CategoriesViewModel(singletonCImpl.categoryRepositoryProvider.get());
 
-          case 1: // com.voicejournal.app.ui.home.HomeViewModel 
+          case 1: // com.voicejournal.app.ui.record.FinalizeDraftViewModel 
+          return (T) new FinalizeDraftViewModel(singletonCImpl.personRepositoryProvider.get(), singletonCImpl.categoryRepositoryProvider.get(), singletonCImpl.voiceLogRepositoryProvider.get(), viewModelCImpl.savedStateHandle);
+
+          case 2: // com.voicejournal.app.ui.home.HomeViewModel 
           return (T) new HomeViewModel(singletonCImpl.voiceLogRepositoryProvider.get(), singletonCImpl.audioRecorderProvider.get());
 
-          case 2: // com.voicejournal.app.ui.logdetail.LogDetailViewModel 
+          case 3: // com.voicejournal.app.ui.logdetail.LogDetailViewModel 
           return (T) new LogDetailViewModel(singletonCImpl.voiceLogRepositoryProvider.get(), singletonCImpl.categoryRepositoryProvider.get(), singletonCImpl.voiceNoteDao(), singletonCImpl.audioFileManagerProvider.get(), singletonCImpl.audioPlayerProvider.get(), singletonCImpl.audioRecorderProvider.get(), viewModelCImpl.savedStateHandle);
 
-          case 3: // com.voicejournal.app.ui.people.PeopleListViewModel 
+          case 4: // com.voicejournal.app.ui.people.PeopleListViewModel 
           return (T) new PeopleListViewModel(singletonCImpl.personDao(), singletonCImpl.personRepositoryProvider.get());
 
-          case 4: // com.voicejournal.app.ui.people.PersonDetailViewModel 
+          case 5: // com.voicejournal.app.ui.people.PersonDetailViewModel 
           return (T) new PersonDetailViewModel(singletonCImpl.personRepositoryProvider.get(), singletonCImpl.voiceLogRepositoryProvider.get(), singletonCImpl.audioPlayerProvider.get(), viewModelCImpl.savedStateHandle);
 
-          case 5: // com.voicejournal.app.ui.record.RecordFlowViewModel 
+          case 6: // com.voicejournal.app.ui.record.RecordFlowViewModel 
           return (T) new RecordFlowViewModel(singletonCImpl.personRepositoryProvider.get(), singletonCImpl.categoryRepositoryProvider.get(), singletonCImpl.voiceLogRepositoryProvider.get(), singletonCImpl.audioFileManagerProvider.get(), viewModelCImpl.savedStateHandle);
 
-          case 6: // com.voicejournal.app.ui.settings.SettingsViewModel 
+          case 7: // com.voicejournal.app.ui.search.SearchViewModel 
+          return (T) new SearchViewModel(singletonCImpl.voiceLogRepositoryProvider.get());
+
+          case 8: // com.voicejournal.app.ui.settings.SettingsViewModel 
           return (T) new SettingsViewModel(singletonCImpl.backupRepositoryProvider.get());
 
           default: throw new AssertionError(id);
@@ -676,6 +712,8 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     private Provider<CategoryRepository> categoryRepositoryProvider;
 
+    private Provider<PersonRepository> personRepositoryProvider;
+
     private Provider<AudioFileManager> audioFileManagerProvider;
 
     private Provider<VoiceLogRepository> voiceLogRepositoryProvider;
@@ -683,8 +721,6 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
     private Provider<AudioRecorder> audioRecorderProvider;
 
     private Provider<AudioPlayer> audioPlayerProvider;
-
-    private Provider<PersonRepository> personRepositoryProvider;
 
     private Provider<BackupRepository> backupRepositoryProvider;
 
@@ -696,6 +732,10 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
 
     private CategoryDao categoryDao() {
       return AppModule_ProvideCategoryDaoFactory.provideCategoryDao(provideDatabaseProvider.get());
+    }
+
+    private PersonDao personDao() {
+      return AppModule_ProvidePersonDaoFactory.providePersonDao(provideDatabaseProvider.get());
     }
 
     private VoiceLogDao voiceLogDao() {
@@ -710,19 +750,15 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
       return AppModule_ProvideVoiceNoteDaoFactory.provideVoiceNoteDao(provideDatabaseProvider.get());
     }
 
-    private PersonDao personDao() {
-      return AppModule_ProvidePersonDaoFactory.providePersonDao(provideDatabaseProvider.get());
-    }
-
     @SuppressWarnings("unchecked")
     private void initialize(final ApplicationContextModule applicationContextModuleParam) {
       this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<VoiceJournalDatabase>(singletonCImpl, 1));
       this.categoryRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<CategoryRepository>(singletonCImpl, 0));
-      this.audioFileManagerProvider = DoubleCheck.provider(new SwitchingProvider<AudioFileManager>(singletonCImpl, 3));
-      this.voiceLogRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<VoiceLogRepository>(singletonCImpl, 2));
-      this.audioRecorderProvider = DoubleCheck.provider(new SwitchingProvider<AudioRecorder>(singletonCImpl, 4));
-      this.audioPlayerProvider = DoubleCheck.provider(new SwitchingProvider<AudioPlayer>(singletonCImpl, 5));
-      this.personRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<PersonRepository>(singletonCImpl, 6));
+      this.personRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<PersonRepository>(singletonCImpl, 2));
+      this.audioFileManagerProvider = DoubleCheck.provider(new SwitchingProvider<AudioFileManager>(singletonCImpl, 4));
+      this.voiceLogRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<VoiceLogRepository>(singletonCImpl, 3));
+      this.audioRecorderProvider = DoubleCheck.provider(new SwitchingProvider<AudioRecorder>(singletonCImpl, 5));
+      this.audioPlayerProvider = DoubleCheck.provider(new SwitchingProvider<AudioPlayer>(singletonCImpl, 6));
       this.backupRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<BackupRepository>(singletonCImpl, 7));
     }
 
@@ -765,20 +801,20 @@ public final class DaggerVoiceJournalApp_HiltComponents_SingletonC {
           case 1: // com.voicejournal.app.data.local.db.VoiceJournalDatabase 
           return (T) AppModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 2: // com.voicejournal.app.data.repository.VoiceLogRepository 
+          case 2: // com.voicejournal.app.data.repository.PersonRepository 
+          return (T) new PersonRepository(singletonCImpl.personDao());
+
+          case 3: // com.voicejournal.app.data.repository.VoiceLogRepository 
           return (T) new VoiceLogRepository(singletonCImpl.voiceLogDao(), singletonCImpl.voiceLogCategoryDao(), singletonCImpl.voiceNoteDao(), singletonCImpl.personDao(), singletonCImpl.audioFileManagerProvider.get());
 
-          case 3: // com.voicejournal.app.data.local.audio.AudioFileManager 
+          case 4: // com.voicejournal.app.data.local.audio.AudioFileManager 
           return (T) new AudioFileManager(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 4: // com.voicejournal.app.audio.AudioRecorder 
+          case 5: // com.voicejournal.app.audio.AudioRecorder 
           return (T) new AudioRecorder(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.audioFileManagerProvider.get());
 
-          case 5: // com.voicejournal.app.audio.AudioPlayer 
+          case 6: // com.voicejournal.app.audio.AudioPlayer 
           return (T) new AudioPlayer(singletonCImpl.audioFileManagerProvider.get());
-
-          case 6: // com.voicejournal.app.data.repository.PersonRepository 
-          return (T) new PersonRepository(singletonCImpl.personDao());
 
           case 7: // com.voicejournal.app.data.repository.BackupRepository 
           return (T) new BackupRepository(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.personDao(), singletonCImpl.categoryDao(), singletonCImpl.voiceLogDao(), singletonCImpl.voiceLogCategoryDao(), singletonCImpl.voiceNoteDao(), singletonCImpl.audioFileManagerProvider.get());

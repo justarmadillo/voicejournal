@@ -50,14 +50,14 @@ public final class VoiceJournalDatabase_Impl extends VoiceJournalDatabase {
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(3) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `persons` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `notes` TEXT, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_persons_name` ON `persons` (`name`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `categories` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `color_hex` TEXT, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_categories_name` ON `categories` (`name`)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `voice_logs` (`id` TEXT NOT NULL, `person_id` TEXT NOT NULL, `audio_file_name` TEXT NOT NULL, `duration_ms` INTEGER NOT NULL, `title` TEXT, `notes` TEXT, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`person_id`) REFERENCES `persons`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `voice_logs` (`id` TEXT NOT NULL, `person_id` TEXT, `audio_file_name` TEXT NOT NULL, `duration_ms` INTEGER NOT NULL, `title` TEXT, `notes` TEXT, `is_draft` INTEGER NOT NULL DEFAULT 0, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`person_id`) REFERENCES `persons`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_voice_logs_person_id` ON `voice_logs` (`person_id`)");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_voice_logs_created_at` ON `voice_logs` (`created_at`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `voice_log_categories` (`voice_log_id` TEXT NOT NULL, `category_id` TEXT NOT NULL, PRIMARY KEY(`voice_log_id`, `category_id`), FOREIGN KEY(`voice_log_id`) REFERENCES `voice_logs`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`category_id`) REFERENCES `categories`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
@@ -65,7 +65,7 @@ public final class VoiceJournalDatabase_Impl extends VoiceJournalDatabase {
         db.execSQL("CREATE TABLE IF NOT EXISTS `voice_notes` (`id` TEXT NOT NULL, `voice_log_id` TEXT NOT NULL, `audio_file_name` TEXT, `duration_ms` INTEGER NOT NULL, `text_note` TEXT, `created_at` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`voice_log_id`) REFERENCES `voice_logs`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_voice_notes_voice_log_id` ON `voice_notes` (`voice_log_id`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '42e687974825efb1ca1ffe1ad2a1f189')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1c8d1cc116ddef49e6fc59ac53878200')");
       }
 
       @Override
@@ -151,13 +151,14 @@ public final class VoiceJournalDatabase_Impl extends VoiceJournalDatabase {
                   + " Expected:\n" + _infoCategories + "\n"
                   + " Found:\n" + _existingCategories);
         }
-        final HashMap<String, TableInfo.Column> _columnsVoiceLogs = new HashMap<String, TableInfo.Column>(8);
+        final HashMap<String, TableInfo.Column> _columnsVoiceLogs = new HashMap<String, TableInfo.Column>(9);
         _columnsVoiceLogs.put("id", new TableInfo.Column("id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsVoiceLogs.put("person_id", new TableInfo.Column("person_id", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsVoiceLogs.put("person_id", new TableInfo.Column("person_id", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("audio_file_name", new TableInfo.Column("audio_file_name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("duration_ms", new TableInfo.Column("duration_ms", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("title", new TableInfo.Column("title", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("notes", new TableInfo.Column("notes", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsVoiceLogs.put("is_draft", new TableInfo.Column("is_draft", "INTEGER", true, 0, "0", TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("created_at", new TableInfo.Column("created_at", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsVoiceLogs.put("updated_at", new TableInfo.Column("updated_at", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysVoiceLogs = new HashSet<TableInfo.ForeignKey>(1);
@@ -207,7 +208,7 @@ public final class VoiceJournalDatabase_Impl extends VoiceJournalDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "42e687974825efb1ca1ffe1ad2a1f189", "b8d2ca69ade1fe8cfe5d54309713c469");
+    }, "1c8d1cc116ddef49e6fc59ac53878200", "1af024c18b5b3b06ec14f2a501ef45e1");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;

@@ -3,6 +3,7 @@ package com.voicejournal.app.di
 import android.content.Context
 import androidx.room.Room
 import com.voicejournal.app.data.local.db.MIGRATION_1_2
+import com.voicejournal.app.data.local.db.MIGRATION_2_3
 import com.voicejournal.app.data.local.db.VoiceJournalDatabase
 import com.voicejournal.app.data.local.db.dao.CategoryDao
 import com.voicejournal.app.data.local.db.dao.PersonDao
@@ -29,7 +30,7 @@ object AppModule {
             "voice_journal.db"
         )
             // Explicit migrations for known schema changes (preserves data)
-            .addMigrations(MIGRATION_1_2)
+            .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
             // Safety net: if a future version has no migration path, wipe DB instead of crashing.
             // Data can always be restored via export/import.
             .fallbackToDestructiveMigration()

@@ -6,7 +6,9 @@ import com.voicejournal.app.ui.home.HomeViewModel_HiltModules;
 import com.voicejournal.app.ui.logdetail.LogDetailViewModel_HiltModules;
 import com.voicejournal.app.ui.people.PeopleListViewModel_HiltModules;
 import com.voicejournal.app.ui.people.PersonDetailViewModel_HiltModules;
+import com.voicejournal.app.ui.record.FinalizeDraftViewModel_HiltModules;
 import com.voicejournal.app.ui.record.RecordFlowViewModel_HiltModules;
+import com.voicejournal.app.ui.search.SearchViewModel_HiltModules;
 import com.voicejournal.app.ui.settings.SettingsViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -160,6 +162,7 @@ public final class VoiceJournalApp_HiltComponents {
   @Subcomponent(
       modules = {
           CategoriesViewModel_HiltModules.KeyModule.class,
+          FinalizeDraftViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
           HomeViewModel_HiltModules.KeyModule.class,
@@ -167,6 +170,7 @@ public final class VoiceJournalApp_HiltComponents {
           PeopleListViewModel_HiltModules.KeyModule.class,
           PersonDetailViewModel_HiltModules.KeyModule.class,
           RecordFlowViewModel_HiltModules.KeyModule.class,
+          SearchViewModel_HiltModules.KeyModule.class,
           SettingsViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class
@@ -206,12 +210,14 @@ public final class VoiceJournalApp_HiltComponents {
   @Subcomponent(
       modules = {
           CategoriesViewModel_HiltModules.BindsModule.class,
+          FinalizeDraftViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           HomeViewModel_HiltModules.BindsModule.class,
           LogDetailViewModel_HiltModules.BindsModule.class,
           PeopleListViewModel_HiltModules.BindsModule.class,
           PersonDetailViewModel_HiltModules.BindsModule.class,
           RecordFlowViewModel_HiltModules.BindsModule.class,
+          SearchViewModel_HiltModules.BindsModule.class,
           SettingsViewModel_HiltModules.BindsModule.class
       }
   )

@@ -50,6 +50,10 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
 
   private final SharedSQLiteStatement __preparedStmtOfUpdateNotes;
 
+  private final SharedSQLiteStatement __preparedStmtOfFinalizeDraft;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteById;
+
   private final SharedSQLiteStatement __preparedStmtOfDeleteAll;
 
   public VoiceLogDao_Impl(@NonNull final RoomDatabase __db) {
@@ -58,14 +62,18 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `voice_logs` (`id`,`person_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `voice_logs` (`id`,`person_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`is_draft`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
       protected void bind(@NonNull final SupportSQLiteStatement statement,
           @NonNull final VoiceLogEntity entity) {
         statement.bindString(1, entity.getId());
-        statement.bindString(2, entity.getPersonId());
+        if (entity.getPersonId() == null) {
+          statement.bindNull(2);
+        } else {
+          statement.bindString(2, entity.getPersonId());
+        }
         statement.bindString(3, entity.getAudioFileName());
         statement.bindLong(4, entity.getDurationMs());
         if (entity.getTitle() == null) {
@@ -78,8 +86,10 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
         } else {
           statement.bindString(6, entity.getNotes());
         }
-        statement.bindLong(7, entity.getCreatedAt());
-        statement.bindLong(8, entity.getUpdatedAt());
+        final int _tmp = entity.isDraft() ? 1 : 0;
+        statement.bindLong(7, _tmp);
+        statement.bindLong(8, entity.getCreatedAt());
+        statement.bindLong(9, entity.getUpdatedAt());
       }
     };
     this.__deletionAdapterOfVoiceLogEntity = new EntityDeletionOrUpdateAdapter<VoiceLogEntity>(__db) {
@@ -99,14 +109,18 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "UPDATE OR ABORT `voice_logs` SET `id` = ?,`person_id` = ?,`audio_file_name` = ?,`duration_ms` = ?,`title` = ?,`notes` = ?,`created_at` = ?,`updated_at` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `voice_logs` SET `id` = ?,`person_id` = ?,`audio_file_name` = ?,`duration_ms` = ?,`title` = ?,`notes` = ?,`is_draft` = ?,`created_at` = ?,`updated_at` = ? WHERE `id` = ?";
       }
 
       @Override
       protected void bind(@NonNull final SupportSQLiteStatement statement,
           @NonNull final VoiceLogEntity entity) {
         statement.bindString(1, entity.getId());
-        statement.bindString(2, entity.getPersonId());
+        if (entity.getPersonId() == null) {
+          statement.bindNull(2);
+        } else {
+          statement.bindString(2, entity.getPersonId());
+        }
         statement.bindString(3, entity.getAudioFileName());
         statement.bindLong(4, entity.getDurationMs());
         if (entity.getTitle() == null) {
@@ -119,9 +133,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
         } else {
           statement.bindString(6, entity.getNotes());
         }
-        statement.bindLong(7, entity.getCreatedAt());
-        statement.bindLong(8, entity.getUpdatedAt());
-        statement.bindString(9, entity.getId());
+        final int _tmp = entity.isDraft() ? 1 : 0;
+        statement.bindLong(7, _tmp);
+        statement.bindLong(8, entity.getCreatedAt());
+        statement.bindLong(9, entity.getUpdatedAt());
+        statement.bindString(10, entity.getId());
       }
     };
     this.__preparedStmtOfUpdateNotes = new SharedSQLiteStatement(__db) {
@@ -129,6 +145,22 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
       @NonNull
       public String createQuery() {
         final String _query = "UPDATE voice_logs SET notes = ?, updated_at = ? WHERE id = ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfFinalizeDraft = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "UPDATE voice_logs SET person_id = ?, notes = ?, is_draft = 0, updated_at = ? WHERE id = ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfDeleteById = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "DELETE FROM voice_logs WHERE id = ?";
         return _query;
       }
     };
@@ -230,6 +262,67 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
   }
 
   @Override
+  public Object finalizeDraft(final String id, final String personId, final String notes,
+      final long updatedAt, final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfFinalizeDraft.acquire();
+        int _argIndex = 1;
+        _stmt.bindString(_argIndex, personId);
+        _argIndex = 2;
+        if (notes == null) {
+          _stmt.bindNull(_argIndex);
+        } else {
+          _stmt.bindString(_argIndex, notes);
+        }
+        _argIndex = 3;
+        _stmt.bindLong(_argIndex, updatedAt);
+        _argIndex = 4;
+        _stmt.bindString(_argIndex, id);
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfFinalizeDraft.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Object deleteById(final String id, final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteById.acquire();
+        int _argIndex = 1;
+        _stmt.bindString(_argIndex, id);
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfDeleteById.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Object deleteAll(final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
@@ -271,6 +364,7 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             final int _cursorIndexOfDurationMs = CursorUtil.getColumnIndexOrThrow(_cursor, "duration_ms");
             final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
             final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+            final int _cursorIndexOfIsDraft = CursorUtil.getColumnIndexOrThrow(_cursor, "is_draft");
             final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "created_at");
             final int _cursorIndexOfUpdatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "updated_at");
             final ArrayMap<String, ArrayList<CategoryEntity>> _collectionCategories = new ArrayMap<String, ArrayList<CategoryEntity>>();
@@ -290,7 +384,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               final String _tmpId;
               _tmpId = _cursor.getString(_cursorIndexOfId);
               final String _tmpPersonId;
-              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              if (_cursor.isNull(_cursorIndexOfPersonId)) {
+                _tmpPersonId = null;
+              } else {
+                _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              }
               final String _tmpAudioFileName;
               _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
               final long _tmpDurationMs;
@@ -307,11 +405,15 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               } else {
                 _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
               }
+              final boolean _tmpIsDraft;
+              final int _tmp;
+              _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+              _tmpIsDraft = _tmp != 0;
               final long _tmpCreatedAt;
               _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
               final long _tmpUpdatedAt;
               _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
+              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
               final ArrayList<CategoryEntity> _tmpCategoriesCollection;
               final String _tmpKey_1;
               _tmpKey_1 = _cursor.getString(_cursorIndexOfId);
@@ -357,6 +459,7 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             final int _cursorIndexOfDurationMs = CursorUtil.getColumnIndexOrThrow(_cursor, "duration_ms");
             final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
             final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+            final int _cursorIndexOfIsDraft = CursorUtil.getColumnIndexOrThrow(_cursor, "is_draft");
             final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "created_at");
             final int _cursorIndexOfUpdatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "updated_at");
             final ArrayMap<String, ArrayList<CategoryEntity>> _collectionCategories = new ArrayMap<String, ArrayList<CategoryEntity>>();
@@ -376,7 +479,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               final String _tmpId;
               _tmpId = _cursor.getString(_cursorIndexOfId);
               final String _tmpPersonId;
-              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              if (_cursor.isNull(_cursorIndexOfPersonId)) {
+                _tmpPersonId = null;
+              } else {
+                _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              }
               final String _tmpAudioFileName;
               _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
               final long _tmpDurationMs;
@@ -393,11 +500,15 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               } else {
                 _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
               }
+              final boolean _tmpIsDraft;
+              final int _tmp;
+              _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+              _tmpIsDraft = _tmp != 0;
               final long _tmpCreatedAt;
               _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
               final long _tmpUpdatedAt;
               _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
+              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
               final ArrayList<CategoryEntity> _tmpCategoriesCollection;
               final String _tmpKey_1;
               _tmpKey_1 = _cursor.getString(_cursorIndexOfId);
@@ -443,6 +554,7 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             final int _cursorIndexOfDurationMs = CursorUtil.getColumnIndexOrThrow(_cursor, "duration_ms");
             final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
             final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+            final int _cursorIndexOfIsDraft = CursorUtil.getColumnIndexOrThrow(_cursor, "is_draft");
             final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "created_at");
             final int _cursorIndexOfUpdatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "updated_at");
             final ArrayMap<String, ArrayList<CategoryEntity>> _collectionCategories = new ArrayMap<String, ArrayList<CategoryEntity>>();
@@ -461,7 +573,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               final String _tmpId;
               _tmpId = _cursor.getString(_cursorIndexOfId);
               final String _tmpPersonId;
-              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              if (_cursor.isNull(_cursorIndexOfPersonId)) {
+                _tmpPersonId = null;
+              } else {
+                _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              }
               final String _tmpAudioFileName;
               _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
               final long _tmpDurationMs;
@@ -478,11 +594,15 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               } else {
                 _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
               }
+              final boolean _tmpIsDraft;
+              final int _tmp;
+              _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+              _tmpIsDraft = _tmp != 0;
               final long _tmpCreatedAt;
               _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
               final long _tmpUpdatedAt;
               _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
+              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
               final ArrayList<CategoryEntity> _tmpCategoriesCollection;
               final String _tmpKey_1;
               _tmpKey_1 = _cursor.getString(_cursorIndexOfId);
@@ -529,6 +649,7 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             final int _cursorIndexOfDurationMs = CursorUtil.getColumnIndexOrThrow(_cursor, "duration_ms");
             final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
             final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+            final int _cursorIndexOfIsDraft = CursorUtil.getColumnIndexOrThrow(_cursor, "is_draft");
             final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "created_at");
             final int _cursorIndexOfUpdatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "updated_at");
             final ArrayMap<String, ArrayList<CategoryEntity>> _collectionCategories = new ArrayMap<String, ArrayList<CategoryEntity>>();
@@ -548,7 +669,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               final String _tmpId;
               _tmpId = _cursor.getString(_cursorIndexOfId);
               final String _tmpPersonId;
-              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              if (_cursor.isNull(_cursorIndexOfPersonId)) {
+                _tmpPersonId = null;
+              } else {
+                _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+              }
               final String _tmpAudioFileName;
               _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
               final long _tmpDurationMs;
@@ -565,11 +690,15 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
               } else {
                 _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
               }
+              final boolean _tmpIsDraft;
+              final int _tmp;
+              _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+              _tmpIsDraft = _tmp != 0;
               final long _tmpCreatedAt;
               _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
               final long _tmpUpdatedAt;
               _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
+              _tmpVoiceLog = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
               final ArrayList<CategoryEntity> _tmpCategoriesCollection;
               final String _tmpKey_1;
               _tmpKey_1 = _cursor.getString(_cursorIndexOfId);
@@ -664,6 +793,7 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
           final int _cursorIndexOfDurationMs = CursorUtil.getColumnIndexOrThrow(_cursor, "duration_ms");
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
+          final int _cursorIndexOfIsDraft = CursorUtil.getColumnIndexOrThrow(_cursor, "is_draft");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "created_at");
           final int _cursorIndexOfUpdatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "updated_at");
           final List<VoiceLogEntity> _result = new ArrayList<VoiceLogEntity>(_cursor.getCount());
@@ -672,7 +802,11 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             final String _tmpId;
             _tmpId = _cursor.getString(_cursorIndexOfId);
             final String _tmpPersonId;
-            _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+            if (_cursor.isNull(_cursorIndexOfPersonId)) {
+              _tmpPersonId = null;
+            } else {
+              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+            }
             final String _tmpAudioFileName;
             _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
             final long _tmpDurationMs;
@@ -689,11 +823,15 @@ public final class VoiceLogDao_Impl implements VoiceLogDao {
             } else {
               _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             }
+            final boolean _tmpIsDraft;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+            _tmpIsDraft = _tmp != 0;
             final long _tmpCreatedAt;
             _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
             final long _tmpUpdatedAt;
             _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-            _item = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
+            _item = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
             _result.add(_item);
           }
           return _result;

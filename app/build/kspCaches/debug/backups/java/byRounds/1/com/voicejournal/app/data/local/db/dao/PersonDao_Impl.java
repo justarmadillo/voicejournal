@@ -537,7 +537,7 @@ public final class PersonDao_Impl implements PersonDao {
       return;
     }
     final StringBuilder _stringBuilder = StringUtil.newStringBuilder();
-    _stringBuilder.append("SELECT `id`,`person_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`created_at`,`updated_at` FROM `voice_logs` WHERE `person_id` IN (");
+    _stringBuilder.append("SELECT `id`,`person_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`is_draft`,`created_at`,`updated_at` FROM `voice_logs` WHERE `person_id` IN (");
     final int _inputSize = __mapKeySet.size();
     StringUtil.appendPlaceholders(_stringBuilder, _inputSize);
     _stringBuilder.append(")");
@@ -561,40 +561,55 @@ public final class PersonDao_Impl implements PersonDao {
       final int _cursorIndexOfDurationMs = 3;
       final int _cursorIndexOfTitle = 4;
       final int _cursorIndexOfNotes = 5;
-      final int _cursorIndexOfCreatedAt = 6;
-      final int _cursorIndexOfUpdatedAt = 7;
+      final int _cursorIndexOfIsDraft = 6;
+      final int _cursorIndexOfCreatedAt = 7;
+      final int _cursorIndexOfUpdatedAt = 8;
       while (_cursor.moveToNext()) {
         final String _tmpKey;
-        _tmpKey = _cursor.getString(_itemKeyIndex);
-        final ArrayList<VoiceLogEntity> _tmpRelation = _map.get(_tmpKey);
-        if (_tmpRelation != null) {
-          final VoiceLogEntity _item_1;
-          final String _tmpId;
-          _tmpId = _cursor.getString(_cursorIndexOfId);
-          final String _tmpPersonId;
-          _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
-          final String _tmpAudioFileName;
-          _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
-          final long _tmpDurationMs;
-          _tmpDurationMs = _cursor.getLong(_cursorIndexOfDurationMs);
-          final String _tmpTitle;
-          if (_cursor.isNull(_cursorIndexOfTitle)) {
-            _tmpTitle = null;
-          } else {
-            _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+        if (_cursor.isNull(_itemKeyIndex)) {
+          _tmpKey = null;
+        } else {
+          _tmpKey = _cursor.getString(_itemKeyIndex);
+        }
+        if (_tmpKey != null) {
+          final ArrayList<VoiceLogEntity> _tmpRelation = _map.get(_tmpKey);
+          if (_tmpRelation != null) {
+            final VoiceLogEntity _item_1;
+            final String _tmpId;
+            _tmpId = _cursor.getString(_cursorIndexOfId);
+            final String _tmpPersonId;
+            if (_cursor.isNull(_cursorIndexOfPersonId)) {
+              _tmpPersonId = null;
+            } else {
+              _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+            }
+            final String _tmpAudioFileName;
+            _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
+            final long _tmpDurationMs;
+            _tmpDurationMs = _cursor.getLong(_cursorIndexOfDurationMs);
+            final String _tmpTitle;
+            if (_cursor.isNull(_cursorIndexOfTitle)) {
+              _tmpTitle = null;
+            } else {
+              _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+            }
+            final String _tmpNotes;
+            if (_cursor.isNull(_cursorIndexOfNotes)) {
+              _tmpNotes = null;
+            } else {
+              _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
+            }
+            final boolean _tmpIsDraft;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfIsDraft);
+            _tmpIsDraft = _tmp != 0;
+            final long _tmpCreatedAt;
+            _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
+            final long _tmpUpdatedAt;
+            _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
+            _item_1 = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
+            _tmpRelation.add(_item_1);
           }
-          final String _tmpNotes;
-          if (_cursor.isNull(_cursorIndexOfNotes)) {
-            _tmpNotes = null;
-          } else {
-            _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
-          }
-          final long _tmpCreatedAt;
-          _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
-          final long _tmpUpdatedAt;
-          _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-          _item_1 = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpCreatedAt,_tmpUpdatedAt);
-          _tmpRelation.add(_item_1);
         }
       }
     } finally {
