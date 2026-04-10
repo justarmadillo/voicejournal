@@ -3,6 +3,7 @@ package com.voicejournal.app.ui.record
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.voicejournal.app.audio.AudioPlayer
 import com.voicejournal.app.data.repository.CategoryRepository
 import com.voicejournal.app.data.repository.PersonRepository
 import com.voicejournal.app.data.repository.VoiceLogRepository
@@ -23,6 +24,7 @@ class FinalizeDraftViewModel @Inject constructor(
     private val personRepository: PersonRepository,
     private val categoryRepository: CategoryRepository,
     private val voiceLogRepository: VoiceLogRepository,
+    val audioPlayer: AudioPlayer,
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
@@ -94,10 +96,19 @@ class FinalizeDraftViewModel @Inject constructor(
         }
     }
 
+    fun playAudio(fileName: String) { audioPlayer.play(fileName) }
+    fun pauseAudio() { audioPlayer.pause() }
+    fun stopAudio() { audioPlayer.stop() }
+
     fun deleteDraft(onDone: () -> Unit) {
         viewModelScope.launch {
             draft.value?.let { voiceLogRepository.delete(it) }
             onDone()
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        audioPlayer.stop()
     }
 }

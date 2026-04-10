@@ -41,6 +41,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.voicejournal.app.ui.components.AudioPlayerBar
 import com.voicejournal.app.ui.components.ConfirmDeleteDialog
 import com.voicejournal.app.ui.components.SelectableCategoryChip
 import com.voicejournal.app.util.DurationUtil
@@ -53,6 +54,7 @@ fun FinalizeDraftScreen(
     viewModel: FinalizeDraftViewModel = hiltViewModel()
 ) {
     val draft by viewModel.draft.collectAsStateWithLifecycle()
+    val playbackState by viewModel.audioPlayer.playbackState.collectAsStateWithLifecycle()
     val persons by viewModel.persons.collectAsStateWithLifecycle()
     val categories by viewModel.categories.collectAsStateWithLifecycle()
     val selectedPerson by viewModel.selectedPerson.collectAsStateWithLifecycle()
@@ -83,7 +85,7 @@ fun FinalizeDraftScreen(
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            // Draft info
+            // Draft info with audio player
             draft?.let { d ->
                 Card(
                     modifier = Modifier.fillMaxWidth(),
@@ -91,11 +93,19 @@ fun FinalizeDraftScreen(
                         containerColor = MaterialTheme.colorScheme.tertiaryContainer
                     )
                 ) {
-                    Text(
-                        text = "Draft recording: ${DurationUtil.formatDuration(d.durationMs)}",
-                        modifier = Modifier.padding(16.dp),
-                        style = MaterialTheme.typography.titleMedium
-                    )
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text(
+                            text = "Draft recording: ${DurationUtil.formatDuration(d.durationMs)}",
+                            style = MaterialTheme.typography.titleMedium
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        AudioPlayerBar(
+                            playbackState = if (playbackState.currentFileName == d.audioFileName) playbackState else com.voicejournal.app.audio.PlaybackState(),
+                            onPlay = { viewModel.playAudio(d.audioFileName) },
+                            onPause = { viewModel.pauseAudio() },
+                            onStop = { viewModel.stopAudio() }
+                        )
+                    }
                 }
             }
 

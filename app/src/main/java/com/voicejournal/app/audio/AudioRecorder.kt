@@ -51,14 +51,20 @@ class AudioRecorder @Inject constructor(
     }
 
     fun stopRecording(): Pair<String, Long> {
-        val fileName = currentFileName ?: throw IllegalStateException("No active recording")
+        val fileName = currentFileName ?: return Pair("", 0L)
         val durationMs = System.currentTimeMillis() - startTimeMs
 
-        recorder?.apply {
-            stop()
-            release()
+        try {
+            recorder?.apply {
+                stop()
+                release()
+            }
+        } catch (_: RuntimeException) {
+            // stop() can throw if recording is too short or in bad state
+            try { recorder?.release() } catch (_: Exception) { }
         }
         recorder = null
+        currentFileName = null
         _isRecording.value = false
 
         return Pair(fileName, durationMs)

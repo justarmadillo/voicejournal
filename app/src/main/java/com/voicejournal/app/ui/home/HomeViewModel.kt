@@ -37,6 +37,7 @@ class HomeViewModel @Inject constructor(
 
     fun stopAndSaveDraft() {
         val (fileName, durationMs) = audioRecorder.stopRecording()
+        if (fileName.isBlank()) return // recording failed
         viewModelScope.launch {
             voiceLogRepository.saveDraft(fileName, durationMs)
             _draftSaved.value = true

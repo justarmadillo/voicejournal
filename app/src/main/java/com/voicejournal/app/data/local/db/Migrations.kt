@@ -16,6 +16,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 
 val MIGRATION_2_3 = object : Migration(2, 3) {
     override fun migrate(db: SupportSQLiteDatabase) {
+        // Disable FK enforcement during table recreation to prevent constraint errors
+        db.execSQL("PRAGMA foreign_keys = OFF")
+
         // Recreate voice_logs with nullable person_id and is_draft column
         db.execSQL("""
             CREATE TABLE IF NOT EXISTS voice_logs_new (
@@ -39,6 +42,9 @@ val MIGRATION_2_3 = object : Migration(2, 3) {
         db.execSQL("ALTER TABLE voice_logs_new RENAME TO voice_logs")
         db.execSQL("CREATE INDEX IF NOT EXISTS index_voice_logs_person_id ON voice_logs(person_id)")
         db.execSQL("CREATE INDEX IF NOT EXISTS index_voice_logs_created_at ON voice_logs(created_at)")
+
+        // Re-enable FK enforcement
+        db.execSQL("PRAGMA foreign_keys = ON")
     }
 }
 

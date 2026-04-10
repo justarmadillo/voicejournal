@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Build Debug APK",
+      "runtimeExecutable": "./gradlew",
+      "runtimeArgs": ["assembleDebug"],
+      "port": 0
+    },
+    {
+      "name": "Build Release APK",
+      "runtimeExecutable": "./gradlew",
+      "runtimeArgs": ["assembleRelease"],
+      "port": 0
+    },
+    {
+      "name": "Install & Launch on Device",
+      "runtimeExecutable": "adb",
+      "runtimeArgs": ["shell", "am", "start", "-n", "com.voicejournal.app/.MainActivity"],
+      "port": 5555
+    }
+  ]
+}

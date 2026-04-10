@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\e33eb410228be894ec9c12eebfbe3f43\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\36a09bc78636b14abf1a8ce59245ea10\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.4] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\43578e2b1a80bb2c8fd0941a9a2cf699\transformed\navigation-common-2.8.4\AndroidManifest.xml:17:1-22:12
@@ -87,8 +87,8 @@ ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:4:5-71
 	android:name
 		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:4:22-68
 application
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:6:5-22:19
-INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:6:5-22:19
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:6:5-23:19
+INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml:6:5-23:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\287cfc32adfdf736b9bd12b8082e66b7\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\287cfc32adfdf736b9bd12b8082e66b7\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.5] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\bf7045eae6779fb25fd88371c64f3a5f\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -110,35 +110,37 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Oracle\.gradle\cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0a9ca54f85ccd9ed24d0b6346764c2fa\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:11:9-41
 	android:icon
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
 		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:12:9-50
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:13:9-50
+	android:enableOnBackInvokedCallback
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:9:9-51
 	android:name
 		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:7:9-40
 activity#com.voicejournal.app.MainActivity
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:13:9-21:20
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:15:13-36
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:16:13-36
 	android:theme
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:16:13-54
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:17:13-54
 	android:name
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:17:13-20:29
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\claude\1st\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\claude\1st\app\src\main\AndroidManifest.xml

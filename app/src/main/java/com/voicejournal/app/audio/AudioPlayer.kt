@@ -5,6 +5,7 @@ import com.voicejournal.app.data.local.audio.AudioFileManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -27,7 +28,7 @@ class AudioPlayer @Inject constructor(
 
     private var player: MediaPlayer? = null
     private var positionJob: Job? = null
-    private val scope = CoroutineScope(Dispatchers.Main)
+    private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
 
     private val _playbackState = MutableStateFlow(PlaybackState())
     val playbackState: StateFlow<PlaybackState> = _playbackState.asStateFlow()
@@ -38,60 +39,85 @@ class AudioPlayer @Inject constructor(
             stop()
         }
 
-        if (player == null) {
-            val file = audioFileManager.getFilePath(fileName)
-            player = MediaPlayer().apply {
-                setDataSource(file.absolutePath)
-                prepare()
-                setOnCompletionListener {
-                    _playbackState.value = _playbackState.value.copy(
-                        isPlaying = false,
-                        currentPositionMs = 0
-                    )
-                    positionJob?.cancel()
+        try {
+            if (player == null) {
+                val file = audioFileManager.getFilePath(fileName)
+                if (!file.exists()) {
+                    _playbackState.value = PlaybackState()
+                    return
+                }
+                player = MediaPlayer().apply {
+                    setDataSource(file.absolutePath)
+                    setOnErrorListener { _, _, _ ->
+                        stop()
+                        true
+                    }
+                    setOnCompletionListener {
+                        _playbackState.value = _playbackState.value.copy(
+                            isPlaying = false,
+                            currentPositionMs = 0
+                        )
+                        positionJob?.cancel()
+                    }
+                    prepare()
                 }
             }
-        }
 
-        player?.start()
-        _playbackState.value = PlaybackState(
-            isPlaying = true,
-            currentPositionMs = player?.currentPosition ?: 0,
-            durationMs = player?.duration ?: 0,
-            currentFileName = fileName
-        )
-        startPositionTracking()
+            player?.start()
+            _playbackState.value = PlaybackState(
+                isPlaying = true,
+                currentPositionMs = player?.currentPosition ?: 0,
+                durationMs = player?.duration ?: 0,
+                currentFileName = fileName
+            )
+            startPositionTracking()
+        } catch (_: Exception) {
+            releasePlayer()
+            _playbackState.value = PlaybackState()
+        }
     }
 
     fun pause() {
-        player?.pause()
+        try {
+            player?.pause()
+        } catch (_: Exception) { }
         positionJob?.cancel()
         _playbackState.value = _playbackState.value.copy(isPlaying = false)
     }
 
     fun stop() {
         positionJob?.cancel()
-        player?.release()
-        player = null
+        releasePlayer()
         _playbackState.value = PlaybackState()
     }
 
     fun seekTo(positionMs: Int) {
-        player?.seekTo(positionMs)
-        _playbackState.value = _playbackState.value.copy(currentPositionMs = positionMs)
+        try {
+            player?.seekTo(positionMs)
+            _playbackState.value = _playbackState.value.copy(currentPositionMs = positionMs)
+        } catch (_: Exception) { }
+    }
+
+    private fun releasePlayer() {
+        try {
+            player?.release()
+        } catch (_: Exception) { }
+        player = null
     }
 
     private fun startPositionTracking() {
         positionJob?.cancel()
         positionJob = scope.launch {
             while (true) {
-                player?.let {
-                    if (it.isPlaying) {
-                        _playbackState.value = _playbackState.value.copy(
-                            currentPositionMs = it.currentPosition
-                        )
+                try {
+                    player?.let {
+                        if (it.isPlaying) {
+                            _playbackState.value = _playbackState.value.copy(
+                                currentPositionMs = it.currentPosition
+                            )
+                        }
                     }
-                }
+                } catch (_: Exception) { }
                 delay(200)
             }
         }
