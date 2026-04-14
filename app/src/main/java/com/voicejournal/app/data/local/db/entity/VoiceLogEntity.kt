@@ -14,10 +14,17 @@ import androidx.room.PrimaryKey
             parentColumns = ["id"],
             childColumns = ["person_id"],
             onDelete = ForeignKey.CASCADE
+        ),
+        ForeignKey(
+            entity = ContextEntity::class,
+            parentColumns = ["id"],
+            childColumns = ["context_id"],
+            onDelete = ForeignKey.CASCADE
         )
     ],
     indices = [
         Index(value = ["person_id"]),
+        Index(value = ["context_id"]),
         Index(value = ["created_at"])
     ]
 )
@@ -26,6 +33,8 @@ data class VoiceLogEntity(
     val id: String,
     @ColumnInfo(name = "person_id")
     val personId: String? = null,
+    @ColumnInfo(name = "context_id")
+    val contextId: String? = null,
     @ColumnInfo(name = "audio_file_name")
     val audioFileName: String,
     @ColumnInfo(name = "duration_ms")

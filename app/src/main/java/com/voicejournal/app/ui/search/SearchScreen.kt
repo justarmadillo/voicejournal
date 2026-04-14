@@ -141,7 +141,7 @@ private fun SearchResultCard(log: VoiceLog, onClick: () -> Unit) {
                         Icon(Icons.Default.Edit, null, modifier = Modifier.size(14.dp), tint = MaterialTheme.colorScheme.tertiary)
                     } else {
                         Text(
-                            text = log.personName,
+                            text = log.subjectName,
                             style = MaterialTheme.typography.titleSmall,
                             fontWeight = FontWeight.Bold
                         )

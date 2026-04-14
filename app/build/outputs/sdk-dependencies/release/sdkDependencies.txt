@@ -1488,6 +1488,18 @@ library {
   repo_index {
   }
 }
+library {
+  maven_library {
+    groupId: "androidx.documentfile"
+    artifactId: "documentfile"
+    version: "1.0.1"
+  }
+  digests {
+    sha256: "\234S\322L\345^x6\264NZ\205\263\366\372\000o\337\207B\324\241\250\r\215C-\356\246a\b\321"
+  }
+  repo_index {
+  }
+}
 library_dependencies {
   library_dep_index: 1
   library_dep_index: 2
@@ -2612,6 +2624,10 @@ library_dependencies {
   library_dep_index: 125
   library_dep_index: 117
 }
+library_dependencies {
+  library_index: 131
+  library_dep_index: 14
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
@@ -2629,6 +2645,7 @@ module_dependencies {
   dependency_index: 117
   dependency_index: 37
   dependency_index: 48
+  dependency_index: 131
   dependency_index: 51
   dependency_index: 60
   dependency_index: 97

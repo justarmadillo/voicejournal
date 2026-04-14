@@ -3,6 +3,7 @@ package com.voicejournal.app.data.repository;
 import android.content.Context;
 import com.voicejournal.app.data.local.audio.AudioFileManager;
 import com.voicejournal.app.data.local.db.dao.CategoryDao;
+import com.voicejournal.app.data.local.db.dao.ContextDao;
 import com.voicejournal.app.data.local.db.dao.PersonDao;
 import com.voicejournal.app.data.local.db.dao.VoiceLogCategoryDao;
 import com.voicejournal.app.data.local.db.dao.VoiceLogDao;
@@ -36,6 +37,8 @@ public final class BackupRepository_Factory implements Factory<BackupRepository>
 
   private final Provider<CategoryDao> categoryDaoProvider;
 
+  private final Provider<ContextDao> contextDaoProvider;
+
   private final Provider<VoiceLogDao> voiceLogDaoProvider;
 
   private final Provider<VoiceLogCategoryDao> voiceLogCategoryDaoProvider;
@@ -46,13 +49,14 @@ public final class BackupRepository_Factory implements Factory<BackupRepository>
 
   public BackupRepository_Factory(Provider<Context> contextProvider,
       Provider<PersonDao> personDaoProvider, Provider<CategoryDao> categoryDaoProvider,
-      Provider<VoiceLogDao> voiceLogDaoProvider,
+      Provider<ContextDao> contextDaoProvider, Provider<VoiceLogDao> voiceLogDaoProvider,
       Provider<VoiceLogCategoryDao> voiceLogCategoryDaoProvider,
       Provider<VoiceNoteDao> voiceNoteDaoProvider,
       Provider<AudioFileManager> audioFileManagerProvider) {
     this.contextProvider = contextProvider;
     this.personDaoProvider = personDaoProvider;
     this.categoryDaoProvider = categoryDaoProvider;
+    this.contextDaoProvider = contextDaoProvider;
     this.voiceLogDaoProvider = voiceLogDaoProvider;
     this.voiceLogCategoryDaoProvider = voiceLogCategoryDaoProvider;
     this.voiceNoteDaoProvider = voiceNoteDaoProvider;
@@ -61,21 +65,22 @@ public final class BackupRepository_Factory implements Factory<BackupRepository>
 
   @Override
   public BackupRepository get() {
-    return newInstance(contextProvider.get(), personDaoProvider.get(), categoryDaoProvider.get(), voiceLogDaoProvider.get(), voiceLogCategoryDaoProvider.get(), voiceNoteDaoProvider.get(), audioFileManagerProvider.get());
+    return newInstance(contextProvider.get(), personDaoProvider.get(), categoryDaoProvider.get(), contextDaoProvider.get(), voiceLogDaoProvider.get(), voiceLogCategoryDaoProvider.get(), voiceNoteDaoProvider.get(), audioFileManagerProvider.get());
   }
 
   public static BackupRepository_Factory create(Provider<Context> contextProvider,
       Provider<PersonDao> personDaoProvider, Provider<CategoryDao> categoryDaoProvider,
-      Provider<VoiceLogDao> voiceLogDaoProvider,
+      Provider<ContextDao> contextDaoProvider, Provider<VoiceLogDao> voiceLogDaoProvider,
       Provider<VoiceLogCategoryDao> voiceLogCategoryDaoProvider,
       Provider<VoiceNoteDao> voiceNoteDaoProvider,
       Provider<AudioFileManager> audioFileManagerProvider) {
-    return new BackupRepository_Factory(contextProvider, personDaoProvider, categoryDaoProvider, voiceLogDaoProvider, voiceLogCategoryDaoProvider, voiceNoteDaoProvider, audioFileManagerProvider);
+    return new BackupRepository_Factory(contextProvider, personDaoProvider, categoryDaoProvider, contextDaoProvider, voiceLogDaoProvider, voiceLogCategoryDaoProvider, voiceNoteDaoProvider, audioFileManagerProvider);
   }
 
   public static BackupRepository newInstance(Context context, PersonDao personDao,
-      CategoryDao categoryDao, VoiceLogDao voiceLogDao, VoiceLogCategoryDao voiceLogCategoryDao,
-      VoiceNoteDao voiceNoteDao, AudioFileManager audioFileManager) {
-    return new BackupRepository(context, personDao, categoryDao, voiceLogDao, voiceLogCategoryDao, voiceNoteDao, audioFileManager);
+      CategoryDao categoryDao, ContextDao contextDao, VoiceLogDao voiceLogDao,
+      VoiceLogCategoryDao voiceLogCategoryDao, VoiceNoteDao voiceNoteDao,
+      AudioFileManager audioFileManager) {
+    return new BackupRepository(context, personDao, categoryDao, contextDao, voiceLogDao, voiceLogCategoryDao, voiceNoteDao, audioFileManager);
   }
 }

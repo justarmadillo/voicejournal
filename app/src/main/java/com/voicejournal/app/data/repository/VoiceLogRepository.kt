@@ -1,6 +1,7 @@
 package com.voicejournal.app.data.repository
 
 import com.voicejournal.app.data.local.audio.AudioFileManager
+import com.voicejournal.app.data.local.db.dao.ContextDao
 import com.voicejournal.app.data.local.db.dao.PersonDao
 import com.voicejournal.app.data.local.db.dao.VoiceLogCategoryDao
 import com.voicejournal.app.data.local.db.dao.VoiceLogDao
@@ -24,6 +25,7 @@ class VoiceLogRepository @Inject constructor(
     private val voiceLogCategoryDao: VoiceLogCategoryDao,
     private val voiceNoteDao: VoiceNoteDao,
     private val personDao: PersonDao,
+    private val contextDao: ContextDao,
     private val audioFileManager: AudioFileManager
 ) {
 
@@ -31,13 +33,19 @@ class VoiceLogRepository @Inject constructor(
         return combine(
             voiceLogDao.getRecentLogs(limit),
             personDao.getAll(),
+            contextDao.getAll(),
             voiceNoteDao.getAllNoteCounts()
-        ) { logs, persons, noteCounts ->
+        ) { logs, persons, contexts, noteCounts ->
             val personMap = persons.associateBy { it.id }
+            val contextMap = contexts.associateBy { it.id }
             val noteCountMap = noteCounts.associate { it.voiceLogId to it.count }
-            // Drafts first, then by date
             logs.map { log ->
-                val name = if (log.voiceLog.isDraft) "Draft" else personMap[log.voiceLog.personId]?.name ?: "Unknown"
+                val name = when {
+                    log.voiceLog.isDraft -> "Draft"
+                    log.voiceLog.personId != null -> personMap[log.voiceLog.personId]?.name ?: "Unknown"
+                    log.voiceLog.contextId != null -> contextMap[log.voiceLog.contextId]?.name ?: "Unknown"
+                    else -> "Unknown"
+                }
                 log.toDomain(name, noteCountMap[log.voiceLog.id] ?: 0)
             }.sortedWith(compareByDescending<VoiceLog> { it.isDraft }.thenByDescending { it.createdAt })
         }
@@ -47,12 +55,18 @@ class VoiceLogRepository @Inject constructor(
         return combine(
             voiceLogDao.getByIdWithCategories(id),
             personDao.getAll(),
+            contextDao.getAll(),
             voiceNoteDao.getAllNoteCounts()
-        ) { log, persons, noteCounts ->
+        ) { log, persons, contexts, noteCounts ->
             log?.let {
-                val personName = persons.find { p -> p.id == it.voiceLog.personId }?.name ?: "Unknown"
+                val name = when {
+                    it.voiceLog.isDraft -> "Draft"
+                    it.voiceLog.personId != null -> persons.find { p -> p.id == it.voiceLog.personId }?.name ?: "Unknown"
+                    it.voiceLog.contextId != null -> contexts.find { c -> c.id == it.voiceLog.contextId }?.name ?: "Unknown"
+                    else -> "Unknown"
+                }
                 val noteCount = noteCounts.find { nc -> nc.voiceLogId == it.voiceLog.id }?.count ?: 0
-                it.toDomain(personName, noteCount)
+                it.toDomain(name, noteCount)
             }
         }
     }
@@ -69,8 +83,24 @@ class VoiceLogRepository @Inject constructor(
         }
     }
 
+    fun getByContextId(contextId: String): Flow<List<VoiceLog>> {
+        return combine(
+            voiceLogDao.getByContextId(contextId),
+            contextDao.getById(contextId),
+            voiceNoteDao.getAllNoteCounts()
+        ) { logs, context, noteCounts ->
+            val name = context?.name ?: "Unknown"
+            val noteCountMap = noteCounts.associate { it.voiceLogId to it.count }
+            logs.map { it.toDomain(name, noteCountMap[it.voiceLog.id] ?: 0) }
+        }
+    }
+
     fun getCategoryStatsForPerson(personId: String): Flow<List<CategoryCount>> {
         return voiceLogDao.getCategoryStatsForPerson(personId)
+    }
+
+    fun getCategoryStatsForContext(contextId: String): Flow<List<CategoryCount>> {
+        return voiceLogDao.getCategoryStatsForContext(contextId)
     }
 
     suspend fun saveDraft(audioFileName: String, durationMs: Long): String {
@@ -78,7 +108,6 @@ class VoiceLogRepository @Inject constructor(
         val logId = UUID.randomUUID().toString()
         val entity = VoiceLogEntity(
             id = logId,
-            personId = null,
             audioFileName = audioFileName,
             durationMs = durationMs,
             isDraft = true,
@@ -91,11 +120,12 @@ class VoiceLogRepository @Inject constructor(
 
     suspend fun finalizeDraft(
         draftId: String,
-        personId: String,
+        personId: String?,
+        contextId: String?,
         categoryIds: List<String>,
         notes: String? = null
     ) {
-        voiceLogDao.finalizeDraft(draftId, personId, notes, DateTimeUtil.now())
+        voiceLogDao.finalizeDraft(draftId, personId, contextId, notes, DateTimeUtil.now())
         voiceLogCategoryDao.deleteByVoiceLogId(draftId)
         if (categoryIds.isNotEmpty()) {
             val crossRefs = categoryIds.map { catId ->
@@ -108,7 +138,8 @@ class VoiceLogRepository @Inject constructor(
     suspend fun create(
         audioFileName: String,
         durationMs: Long,
-        personId: String,
+        personId: String? = null,
+        contextId: String? = null,
         categoryIds: List<String>,
         title: String? = null,
         notes: String? = null
@@ -119,6 +150,7 @@ class VoiceLogRepository @Inject constructor(
         val entity = VoiceLogEntity(
             id = logId,
             personId = personId,
+            contextId = contextId,
             audioFileName = audioFileName,
             durationMs = durationMs,
             title = title,
@@ -157,10 +189,18 @@ class VoiceLogRepository @Inject constructor(
         voiceLogDao.deleteById(voiceLog.id)
     }
 
-    private fun VoiceLogWithCategories.toDomain(personName: String, noteCount: Int = 0) = VoiceLog(
+    suspend fun deleteMultiple(voiceLogs: List<VoiceLog>) {
+        voiceLogs.forEach { log ->
+            audioFileManager.deleteFile(log.audioFileName)
+            voiceLogDao.deleteById(log.id)
+        }
+    }
+
+    private fun VoiceLogWithCategories.toDomain(subjectName: String, noteCount: Int = 0) = VoiceLog(
         id = voiceLog.id,
         personId = voiceLog.personId,
-        personName = personName,
+        contextId = voiceLog.contextId,
+        subjectName = subjectName,
         audioFileName = voiceLog.audioFileName,
         durationMs = voiceLog.durationMs,
         title = voiceLog.title,

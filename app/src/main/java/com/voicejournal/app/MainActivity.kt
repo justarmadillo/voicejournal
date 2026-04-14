@@ -11,7 +11,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Label
+import androidx.compose.material.icons.automirrored.filled.Label
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.People
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
@@ -34,6 +35,7 @@ import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.voicejournal.app.ui.navigation.Categories
+import com.voicejournal.app.ui.navigation.ContextList
 import com.voicejournal.app.ui.navigation.Home as HomeRoute
 import com.voicejournal.app.ui.navigation.NavGraph
 import com.voicejournal.app.ui.navigation.PeopleList
@@ -86,8 +88,9 @@ private fun MainContent() {
     val bottomNavItems = listOf(
         BottomNavItem("Home", Icons.Default.Home, HomeRoute),
         BottomNavItem("People", Icons.Default.People, PeopleList),
+        BottomNavItem("Contexts", Icons.Default.Lightbulb, ContextList),
         BottomNavItem("Search", Icons.Default.Search, SearchRoute),
-        BottomNavItem("Categories", Icons.Default.Label, Categories),
+        BottomNavItem("Categories", Icons.AutoMirrored.Filled.Label, Categories),
         BottomNavItem("Settings", Icons.Default.Settings, SettingsRoute)
     )
 

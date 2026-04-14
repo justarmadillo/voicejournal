@@ -10,4 +10,6 @@ import kotlinx.serialization.Serializable
 @Serializable object PeopleList
 @Serializable object Categories
 @Serializable object Search
+@Serializable object ContextList
+@Serializable data class ContextDetail(val contextId: String)
 @Serializable object Settings

@@ -7,6 +7,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.voicejournal.app.ui.categories.CategoriesScreen
+import com.voicejournal.app.ui.contexts.ContextDetailScreen
+import com.voicejournal.app.ui.contexts.ContextListScreen
 import com.voicejournal.app.ui.home.HomeScreen
 import com.voicejournal.app.ui.logdetail.LogDetailScreen
 import com.voicejournal.app.ui.people.PeopleListScreen
@@ -72,6 +74,23 @@ fun NavGraph(navController: NavHostController, modifier: Modifier = Modifier) {
                 },
                 onBack = {
                     navController.popBackStack()
+                }
+            )
+        }
+
+        composable<ContextList> {
+            ContextListScreen(
+                onNavigateToContextDetail = { contextId ->
+                    navController.navigate(ContextDetail(contextId))
+                }
+            )
+        }
+
+        composable<ContextDetail> {
+            ContextDetailScreen(
+                onBack = { navController.popBackStack() },
+                onNavigateToLogDetail = { voiceLogId ->
+                    navController.navigate(LogDetail(voiceLogId))
                 }
             )
         }

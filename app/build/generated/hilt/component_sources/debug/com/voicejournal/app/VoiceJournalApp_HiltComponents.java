@@ -2,6 +2,8 @@ package com.voicejournal.app;
 
 import com.voicejournal.app.di.AppModule;
 import com.voicejournal.app.ui.categories.CategoriesViewModel_HiltModules;
+import com.voicejournal.app.ui.contexts.ContextDetailViewModel_HiltModules;
+import com.voicejournal.app.ui.contexts.ContextListViewModel_HiltModules;
 import com.voicejournal.app.ui.home.HomeViewModel_HiltModules;
 import com.voicejournal.app.ui.logdetail.LogDetailViewModel_HiltModules;
 import com.voicejournal.app.ui.people.PeopleListViewModel_HiltModules;
@@ -162,6 +164,8 @@ public final class VoiceJournalApp_HiltComponents {
   @Subcomponent(
       modules = {
           CategoriesViewModel_HiltModules.KeyModule.class,
+          ContextDetailViewModel_HiltModules.KeyModule.class,
+          ContextListViewModel_HiltModules.KeyModule.class,
           FinalizeDraftViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
@@ -210,6 +214,8 @@ public final class VoiceJournalApp_HiltComponents {
   @Subcomponent(
       modules = {
           CategoriesViewModel_HiltModules.BindsModule.class,
+          ContextDetailViewModel_HiltModules.BindsModule.class,
+          ContextListViewModel_HiltModules.BindsModule.class,
           FinalizeDraftViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           HomeViewModel_HiltModules.BindsModule.class,

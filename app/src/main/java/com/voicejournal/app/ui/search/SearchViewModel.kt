@@ -30,7 +30,7 @@ class SearchViewModel @Inject constructor(
             val searchable = buildString {
                 append(log.notes.orEmpty().lowercase())
                 append(" ")
-                append(log.personName.lowercase())
+                append(log.subjectName.lowercase())
             }
             words.all { word -> searchable.contains(word) }
         }

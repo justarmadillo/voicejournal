@@ -729,6 +729,19 @@
       jars="C:\Users\Oracle\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.22\b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1\kotlin-stdlib-jdk8-1.8.22.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"/>
   <library
+      name="androidx.documentfile:documentfile:1.0.1@aar"
+      jars="C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0c54645a4042eaa8320a5abc38c31d8e\transformed\documentfile-1.0.1\jars\classes.jar"
+      resolved="androidx.documentfile:documentfile:1.0.1"
+      folder="C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0c54645a4042eaa8320a5abc38c31d8e\transformed\documentfile-1.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.sqlite:sqlite-framework:2.4.0@aar"
       jars="C:\Users\Oracle\.gradle\caches\8.10.2\transforms\8553da0960781c03084f02daeb66142d\transformed\sqlite-framework-2.4.0\jars\classes.jar"
       resolved="androidx.sqlite:sqlite-framework:2.4.0"

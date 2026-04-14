@@ -1,7 +1,8 @@
 package com.voicejournal.app.ui.home
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,12 +19,18 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
@@ -33,6 +40,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableLongStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -44,13 +52,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.voicejournal.app.domain.model.VoiceLog
 import com.voicejournal.app.ui.components.CategoryChip
+import com.voicejournal.app.ui.components.ConfirmDeleteDialog
 import com.voicejournal.app.ui.components.EmptyState
 import com.voicejournal.app.ui.components.RecordButton
 import com.voicejournal.app.util.DateTimeUtil
 import com.voicejournal.app.util.DurationUtil
 import kotlinx.coroutines.delay
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class, ExperimentalFoundationApi::class)
 @Composable
 fun HomeScreen(
     onNavigateToLogDetail: (voiceLogId: String) -> Unit,
@@ -60,8 +69,11 @@ fun HomeScreen(
     val recentLogs by viewModel.recentLogs.collectAsStateWithLifecycle()
     val isRecording by viewModel.isRecording.collectAsStateWithLifecycle()
     val draftSaved by viewModel.draftSaved.collectAsStateWithLifecycle()
+    val selectedIds by viewModel.selectedIds.collectAsStateWithLifecycle()
     var recordingSeconds by remember { mutableLongStateOf(0L) }
     val snackbarHostState = remember { SnackbarHostState() }
+    var showDeleteConfirm by remember { mutableStateOf(false) }
+    val inSelectionMode = selectedIds.isNotEmpty()
 
     LaunchedEffect(isRecording) {
         recordingSeconds = 0
@@ -80,36 +92,54 @@ fun HomeScreen(
 
     Box(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.fillMaxSize()) {
-            TopAppBar(title = { Text("VoiceJournal") })
+            if (inSelectionMode) {
+                TopAppBar(
+                    title = { Text("${selectedIds.size} selected") },
+                    navigationIcon = {
+                        IconButton(onClick = { viewModel.clearSelection() }) {
+                            Icon(Icons.Default.Close, "Cancel")
+                        }
+                    },
+                    actions = {
+                        IconButton(onClick = { showDeleteConfirm = true }) {
+                            Icon(Icons.Default.Delete, "Delete selected", tint = MaterialTheme.colorScheme.error)
+                        }
+                    }
+                )
+            } else {
+                TopAppBar(title = { Text("Voice Journal") })
+            }
 
             // Record button area
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(vertical = 32.dp),
-                contentAlignment = Alignment.Center
-            ) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    RecordButton(
-                        isRecording = isRecording,
-                        onClick = {
-                            if (isRecording) {
-                                viewModel.stopAndSaveDraft()
-                            } else {
-                                viewModel.startRecording()
+            if (!inSelectionMode) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 32.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        RecordButton(
+                            isRecording = isRecording,
+                            onClick = {
+                                if (isRecording) {
+                                    viewModel.stopAndSaveDraft()
+                                } else {
+                                    viewModel.startRecording()
+                                }
                             }
-                        }
-                    )
-                    Spacer(modifier = Modifier.height(12.dp))
-                    Text(
-                        text = if (isRecording) {
-                            "Recording... ${DurationUtil.formatDuration(recordingSeconds * 1000)}"
-                        } else {
-                            "Tap to record"
-                        },
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text(
+                            text = if (isRecording) {
+                                "Recording... ${DurationUtil.formatDuration(recordingSeconds * 1000)}"
+                            } else {
+                                "Tap to record"
+                            },
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                 }
             }
 
@@ -121,21 +151,34 @@ fun HomeScreen(
                     subtitle = "Tap the button above to record your first voice memo"
                 )
             } else {
-                Text(
-                    text = "Recent",
-                    style = MaterialTheme.typography.titleMedium,
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-                )
+                if (!inSelectionMode) {
+                    Text(
+                        text = "Recent",
+                        style = MaterialTheme.typography.titleMedium,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                    )
+                }
                 LazyColumn(
                     modifier = Modifier.fillMaxSize(),
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     items(recentLogs, key = { it.id }, contentType = { "voice_log" }) { log ->
+                        val isSelected = selectedIds.contains(log.id)
                         VoiceLogCard(
                             log = log,
+                            isSelected = isSelected,
+                            inSelectionMode = inSelectionMode,
                             onClick = {
-                                if (log.isDraft) onNavigateToFinalizeDraft(log.id)
-                                else onNavigateToLogDetail(log.id)
+                                if (inSelectionMode) {
+                                    viewModel.toggleSelection(log.id)
+                                } else if (log.isDraft) {
+                                    onNavigateToFinalizeDraft(log.id)
+                                } else {
+                                    onNavigateToLogDetail(log.id)
+                                }
+                            },
+                            onLongClick = {
+                                viewModel.toggleSelection(log.id)
                             }
                         )
                     }
@@ -148,23 +191,43 @@ fun HomeScreen(
             modifier = Modifier.align(Alignment.BottomCenter)
         )
     }
+
+    if (showDeleteConfirm) {
+        ConfirmDeleteDialog(
+            title = "Delete ${selectedIds.size} recording(s)?",
+            message = "This will permanently delete the selected recordings and their audio files.",
+            onConfirm = {
+                viewModel.deleteSelected()
+                showDeleteConfirm = false
+            },
+            onDismiss = { showDeleteConfirm = false }
+        )
+    }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
+@OptIn(ExperimentalLayoutApi::class, ExperimentalFoundationApi::class)
 @Composable
 private fun VoiceLogCard(
     log: VoiceLog,
-    onClick: () -> Unit
+    isSelected: Boolean,
+    inSelectionMode: Boolean,
+    onClick: () -> Unit,
+    onLongClick: () -> Unit
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp)
-            .clickable(onClick = onClick),
+            .combinedClickable(
+                onClick = onClick,
+                onLongClick = onLongClick
+            ),
         elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
-        colors = if (log.isDraft) CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.tertiaryContainer
-        ) else CardDefaults.cardColors()
+        colors = when {
+            isSelected -> CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
+            log.isDraft -> CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)
+            else -> CardDefaults.cardColors()
+        }
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Row(
@@ -172,6 +235,14 @@ private fun VoiceLogCard(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
+                if (inSelectionMode) {
+                    Checkbox(
+                        checked = isSelected,
+                        onCheckedChange = { onClick() },
+                        modifier = Modifier.size(24.dp)
+                    )
+                    Spacer(modifier = Modifier.size(8.dp))
+                }
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.weight(1f)
@@ -189,8 +260,16 @@ private fun VoiceLogCard(
                         Spacer(modifier = Modifier.size(8.dp))
                         Icon(Icons.Default.Edit, "Tap to finalize", modifier = Modifier.size(14.dp), tint = MaterialTheme.colorScheme.tertiary)
                     } else {
+                        // Show person or context icon
+                        Icon(
+                            if (log.contextId != null) Icons.Default.Lightbulb else Icons.Default.Person,
+                            null,
+                            modifier = Modifier.size(16.dp),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.size(6.dp))
                         Text(
-                            text = log.personName,
+                            text = log.subjectName,
                             style = MaterialTheme.typography.titleSmall,
                             fontWeight = FontWeight.Bold
                         )

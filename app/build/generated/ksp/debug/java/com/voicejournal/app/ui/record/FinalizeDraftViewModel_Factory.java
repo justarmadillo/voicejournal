@@ -3,6 +3,7 @@ package com.voicejournal.app.ui.record;
 import androidx.lifecycle.SavedStateHandle;
 import com.voicejournal.app.audio.AudioPlayer;
 import com.voicejournal.app.data.repository.CategoryRepository;
+import com.voicejournal.app.data.repository.ContextRepository;
 import com.voicejournal.app.data.repository.PersonRepository;
 import com.voicejournal.app.data.repository.VoiceLogRepository;
 import dagger.internal.DaggerGenerated;
@@ -32,6 +33,8 @@ public final class FinalizeDraftViewModel_Factory implements Factory<FinalizeDra
 
   private final Provider<CategoryRepository> categoryRepositoryProvider;
 
+  private final Provider<ContextRepository> contextRepositoryProvider;
+
   private final Provider<VoiceLogRepository> voiceLogRepositoryProvider;
 
   private final Provider<AudioPlayer> audioPlayerProvider;
@@ -40,11 +43,13 @@ public final class FinalizeDraftViewModel_Factory implements Factory<FinalizeDra
 
   public FinalizeDraftViewModel_Factory(Provider<PersonRepository> personRepositoryProvider,
       Provider<CategoryRepository> categoryRepositoryProvider,
+      Provider<ContextRepository> contextRepositoryProvider,
       Provider<VoiceLogRepository> voiceLogRepositoryProvider,
       Provider<AudioPlayer> audioPlayerProvider,
       Provider<SavedStateHandle> savedStateHandleProvider) {
     this.personRepositoryProvider = personRepositoryProvider;
     this.categoryRepositoryProvider = categoryRepositoryProvider;
+    this.contextRepositoryProvider = contextRepositoryProvider;
     this.voiceLogRepositoryProvider = voiceLogRepositoryProvider;
     this.audioPlayerProvider = audioPlayerProvider;
     this.savedStateHandleProvider = savedStateHandleProvider;
@@ -52,21 +57,23 @@ public final class FinalizeDraftViewModel_Factory implements Factory<FinalizeDra
 
   @Override
   public FinalizeDraftViewModel get() {
-    return newInstance(personRepositoryProvider.get(), categoryRepositoryProvider.get(), voiceLogRepositoryProvider.get(), audioPlayerProvider.get(), savedStateHandleProvider.get());
+    return newInstance(personRepositoryProvider.get(), categoryRepositoryProvider.get(), contextRepositoryProvider.get(), voiceLogRepositoryProvider.get(), audioPlayerProvider.get(), savedStateHandleProvider.get());
   }
 
   public static FinalizeDraftViewModel_Factory create(
       Provider<PersonRepository> personRepositoryProvider,
       Provider<CategoryRepository> categoryRepositoryProvider,
+      Provider<ContextRepository> contextRepositoryProvider,
       Provider<VoiceLogRepository> voiceLogRepositoryProvider,
       Provider<AudioPlayer> audioPlayerProvider,
       Provider<SavedStateHandle> savedStateHandleProvider) {
-    return new FinalizeDraftViewModel_Factory(personRepositoryProvider, categoryRepositoryProvider, voiceLogRepositoryProvider, audioPlayerProvider, savedStateHandleProvider);
+    return new FinalizeDraftViewModel_Factory(personRepositoryProvider, categoryRepositoryProvider, contextRepositoryProvider, voiceLogRepositoryProvider, audioPlayerProvider, savedStateHandleProvider);
   }
 
   public static FinalizeDraftViewModel newInstance(PersonRepository personRepository,
-      CategoryRepository categoryRepository, VoiceLogRepository voiceLogRepository,
-      AudioPlayer audioPlayer, SavedStateHandle savedStateHandle) {
-    return new FinalizeDraftViewModel(personRepository, categoryRepository, voiceLogRepository, audioPlayer, savedStateHandle);
+      CategoryRepository categoryRepository, ContextRepository contextRepository,
+      VoiceLogRepository voiceLogRepository, AudioPlayer audioPlayer,
+      SavedStateHandle savedStateHandle) {
+    return new FinalizeDraftViewModel(personRepository, categoryRepository, contextRepository, voiceLogRepository, audioPlayer, savedStateHandle);
   }
 }

@@ -25,11 +25,14 @@ class HomeViewModel @Inject constructor(
 
     val isRecording: StateFlow<Boolean> = audioRecorder.isRecording
 
-    private val _recordingTimer = MutableStateFlow(0L)
-    val recordingTimer: StateFlow<Long> = _recordingTimer.asStateFlow()
-
     private val _draftSaved = MutableStateFlow(false)
     val draftSaved: StateFlow<Boolean> = _draftSaved.asStateFlow()
+
+    // Multi-select state
+    private val _selectedIds = MutableStateFlow<Set<String>>(emptySet())
+    val selectedIds: StateFlow<Set<String>> = _selectedIds.asStateFlow()
+
+    val isSelectionMode: Boolean get() = _selectedIds.value.isNotEmpty()
 
     fun startRecording(): String {
         return audioRecorder.startRecording()
@@ -37,7 +40,7 @@ class HomeViewModel @Inject constructor(
 
     fun stopAndSaveDraft() {
         val (fileName, durationMs) = audioRecorder.stopRecording()
-        if (fileName.isBlank()) return // recording failed
+        if (fileName.isBlank()) return
         viewModelScope.launch {
             voiceLogRepository.saveDraft(fileName, durationMs)
             _draftSaved.value = true
@@ -48,7 +51,23 @@ class HomeViewModel @Inject constructor(
         _draftSaved.value = false
     }
 
-    fun cancelRecording() {
-        audioRecorder.cancelRecording()
+    fun toggleSelection(logId: String) {
+        _selectedIds.value = _selectedIds.value.toMutableSet().apply {
+            if (contains(logId)) remove(logId) else add(logId)
+        }
+    }
+
+    fun clearSelection() {
+        _selectedIds.value = emptySet()
+    }
+
+    fun deleteSelected() {
+        val ids = _selectedIds.value
+        val logsToDelete = recentLogs.value.filter { ids.contains(it.id) }
+        if (logsToDelete.isEmpty()) return
+        viewModelScope.launch {
+            voiceLogRepository.deleteMultiple(logsToDelete)
+            _selectedIds.value = emptySet()
+        }
     }
 }

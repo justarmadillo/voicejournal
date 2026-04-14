@@ -3,7 +3,8 @@ package com.voicejournal.app.domain.model
 data class VoiceLog(
     val id: String,
     val personId: String? = null,
-    val personName: String,
+    val contextId: String? = null,
+    val subjectName: String,
     val audioFileName: String,
     val durationMs: Long,
     val title: String? = null,

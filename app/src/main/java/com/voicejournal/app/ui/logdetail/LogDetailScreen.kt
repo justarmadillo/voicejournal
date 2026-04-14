@@ -120,7 +120,7 @@ fun LogDetailScreen(
                 // Header: person + date
                 item {
                     Spacer(modifier = Modifier.height(4.dp))
-                    Text(log.personName, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                    Text(log.subjectName, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                     Text(DateTimeUtil.formatDateTime(log.createdAt), style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     Text("Duration: ${DurationUtil.formatDuration(log.durationMs)}", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }

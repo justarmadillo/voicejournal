@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.room.Room
 import com.voicejournal.app.data.local.db.MIGRATION_1_2
 import com.voicejournal.app.data.local.db.MIGRATION_2_3
+import com.voicejournal.app.data.local.db.MIGRATION_3_4
 import com.voicejournal.app.data.local.db.VoiceJournalDatabase
 import com.voicejournal.app.data.local.db.dao.CategoryDao
+import com.voicejournal.app.data.local.db.dao.ContextDao
 import com.voicejournal.app.data.local.db.dao.PersonDao
 import com.voicejournal.app.data.local.db.dao.VoiceLogCategoryDao
 import com.voicejournal.app.data.local.db.dao.VoiceLogDao
@@ -29,11 +31,8 @@ object AppModule {
             VoiceJournalDatabase::class.java,
             "voice_journal.db"
         )
-            // Explicit migrations for known schema changes (preserves data)
-            .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
-            // Safety net: if a future version has no migration path, wipe DB instead of crashing.
-            // Data can always be restored via export/import.
-            .fallbackToDestructiveMigration()
+            .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
+            .fallbackToDestructiveMigrationOnDowngrade()
             .build()
     }
 
@@ -42,6 +41,9 @@ object AppModule {
 
     @Provides
     fun provideCategoryDao(database: VoiceJournalDatabase): CategoryDao = database.categoryDao()
+
+    @Provides
+    fun provideContextDao(database: VoiceJournalDatabase): ContextDao = database.contextDao()
 
     @Provides
     fun provideVoiceLogDao(database: VoiceJournalDatabase): VoiceLogDao = database.voiceLogDao()

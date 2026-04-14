@@ -64,6 +64,7 @@ MERGED from [androidx.compose.runtime:runtime-android:1.7.5] C:\Users\Oracle\.gr
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\8553da0960781c03084f02daeb66142d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\266cedac82d4decf459e53ac7ee2ad1a\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\c1fdf23d60dfccbde48d0f890d9c1356\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0c54645a4042eaa8320a5abc38c31d8e\transformed\documentfile-1.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\ad048c1703b525e1c39ad138e088a939\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\5f548ad2c57d22e7b527e8105014efa9\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\cca972568efe715b1aee78248b0ee84f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -260,6 +261,8 @@ MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Oracle\.gradle\caches\8.10.2
 MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\266cedac82d4decf459e53ac7ee2ad1a\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\c1fdf23d60dfccbde48d0f890d9c1356\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\c1fdf23d60dfccbde48d0f890d9c1356\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0c54645a4042eaa8320a5abc38c31d8e\transformed\documentfile-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\0c54645a4042eaa8320a5abc38c31d8e\transformed\documentfile-1.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\ad048c1703b525e1c39ad138e088a939\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\ad048c1703b525e1c39ad138e088a939\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Oracle\.gradle\caches\8.10.2\transforms\5f548ad2c57d22e7b527e8105014efa9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44

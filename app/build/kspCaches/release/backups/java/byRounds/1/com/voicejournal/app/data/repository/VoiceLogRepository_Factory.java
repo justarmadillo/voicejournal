@@ -1,6 +1,7 @@
 package com.voicejournal.app.data.repository;
 
 import com.voicejournal.app.data.local.audio.AudioFileManager;
+import com.voicejournal.app.data.local.db.dao.ContextDao;
 import com.voicejournal.app.data.local.db.dao.PersonDao;
 import com.voicejournal.app.data.local.db.dao.VoiceLogCategoryDao;
 import com.voicejournal.app.data.local.db.dao.VoiceLogDao;
@@ -36,34 +37,39 @@ public final class VoiceLogRepository_Factory implements Factory<VoiceLogReposit
 
   private final Provider<PersonDao> personDaoProvider;
 
+  private final Provider<ContextDao> contextDaoProvider;
+
   private final Provider<AudioFileManager> audioFileManagerProvider;
 
   public VoiceLogRepository_Factory(Provider<VoiceLogDao> voiceLogDaoProvider,
       Provider<VoiceLogCategoryDao> voiceLogCategoryDaoProvider,
       Provider<VoiceNoteDao> voiceNoteDaoProvider, Provider<PersonDao> personDaoProvider,
+      Provider<ContextDao> contextDaoProvider,
       Provider<AudioFileManager> audioFileManagerProvider) {
     this.voiceLogDaoProvider = voiceLogDaoProvider;
     this.voiceLogCategoryDaoProvider = voiceLogCategoryDaoProvider;
     this.voiceNoteDaoProvider = voiceNoteDaoProvider;
     this.personDaoProvider = personDaoProvider;
+    this.contextDaoProvider = contextDaoProvider;
     this.audioFileManagerProvider = audioFileManagerProvider;
   }
 
   @Override
   public VoiceLogRepository get() {
-    return newInstance(voiceLogDaoProvider.get(), voiceLogCategoryDaoProvider.get(), voiceNoteDaoProvider.get(), personDaoProvider.get(), audioFileManagerProvider.get());
+    return newInstance(voiceLogDaoProvider.get(), voiceLogCategoryDaoProvider.get(), voiceNoteDaoProvider.get(), personDaoProvider.get(), contextDaoProvider.get(), audioFileManagerProvider.get());
   }
 
   public static VoiceLogRepository_Factory create(Provider<VoiceLogDao> voiceLogDaoProvider,
       Provider<VoiceLogCategoryDao> voiceLogCategoryDaoProvider,
       Provider<VoiceNoteDao> voiceNoteDaoProvider, Provider<PersonDao> personDaoProvider,
+      Provider<ContextDao> contextDaoProvider,
       Provider<AudioFileManager> audioFileManagerProvider) {
-    return new VoiceLogRepository_Factory(voiceLogDaoProvider, voiceLogCategoryDaoProvider, voiceNoteDaoProvider, personDaoProvider, audioFileManagerProvider);
+    return new VoiceLogRepository_Factory(voiceLogDaoProvider, voiceLogCategoryDaoProvider, voiceNoteDaoProvider, personDaoProvider, contextDaoProvider, audioFileManagerProvider);
   }
 
   public static VoiceLogRepository newInstance(VoiceLogDao voiceLogDao,
       VoiceLogCategoryDao voiceLogCategoryDao, VoiceNoteDao voiceNoteDao, PersonDao personDao,
-      AudioFileManager audioFileManager) {
-    return new VoiceLogRepository(voiceLogDao, voiceLogCategoryDao, voiceNoteDao, personDao, audioFileManager);
+      ContextDao contextDao, AudioFileManager audioFileManager) {
+    return new VoiceLogRepository(voiceLogDao, voiceLogCategoryDao, voiceNoteDao, personDao, contextDao, audioFileManager);
   }
 }

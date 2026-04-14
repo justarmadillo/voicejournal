@@ -48,8 +48,23 @@ interface VoiceLogDao {
     @Query("UPDATE voice_logs SET notes = :notes, updated_at = :updatedAt WHERE id = :id")
     suspend fun updateNotes(id: String, notes: String, updatedAt: Long)
 
-    @Query("UPDATE voice_logs SET person_id = :personId, notes = :notes, is_draft = 0, updated_at = :updatedAt WHERE id = :id")
-    suspend fun finalizeDraft(id: String, personId: String, notes: String?, updatedAt: Long)
+    @Transaction
+    @Query("SELECT * FROM voice_logs WHERE context_id = :contextId ORDER BY created_at DESC")
+    fun getByContextId(contextId: String): Flow<List<VoiceLogWithCategories>>
+
+    @Query("""
+        SELECT c.name as categoryName, c.color_hex as categoryColorHex, COUNT(*) as count
+        FROM voice_logs vl
+        JOIN voice_log_categories vlc ON vl.id = vlc.voice_log_id
+        JOIN categories c ON vlc.category_id = c.id
+        WHERE vl.context_id = :contextId
+        GROUP BY c.id
+        ORDER BY count DESC
+    """)
+    fun getCategoryStatsForContext(contextId: String): Flow<List<CategoryCount>>
+
+    @Query("UPDATE voice_logs SET person_id = :personId, context_id = :contextId, notes = :notes, is_draft = 0, updated_at = :updatedAt WHERE id = :id")
+    suspend fun finalizeDraft(id: String, personId: String?, contextId: String?, notes: String?, updatedAt: Long)
 
     @Query("DELETE FROM voice_logs WHERE id = :id")
     suspend fun deleteById(id: String)

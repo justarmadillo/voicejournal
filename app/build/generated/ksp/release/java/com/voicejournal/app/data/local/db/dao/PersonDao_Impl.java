@@ -537,7 +537,7 @@ public final class PersonDao_Impl implements PersonDao {
       return;
     }
     final StringBuilder _stringBuilder = StringUtil.newStringBuilder();
-    _stringBuilder.append("SELECT `id`,`person_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`is_draft`,`created_at`,`updated_at` FROM `voice_logs` WHERE `person_id` IN (");
+    _stringBuilder.append("SELECT `id`,`person_id`,`context_id`,`audio_file_name`,`duration_ms`,`title`,`notes`,`is_draft`,`created_at`,`updated_at` FROM `voice_logs` WHERE `person_id` IN (");
     final int _inputSize = __mapKeySet.size();
     StringUtil.appendPlaceholders(_stringBuilder, _inputSize);
     _stringBuilder.append(")");
@@ -557,13 +557,14 @@ public final class PersonDao_Impl implements PersonDao {
       }
       final int _cursorIndexOfId = 0;
       final int _cursorIndexOfPersonId = 1;
-      final int _cursorIndexOfAudioFileName = 2;
-      final int _cursorIndexOfDurationMs = 3;
-      final int _cursorIndexOfTitle = 4;
-      final int _cursorIndexOfNotes = 5;
-      final int _cursorIndexOfIsDraft = 6;
-      final int _cursorIndexOfCreatedAt = 7;
-      final int _cursorIndexOfUpdatedAt = 8;
+      final int _cursorIndexOfContextId = 2;
+      final int _cursorIndexOfAudioFileName = 3;
+      final int _cursorIndexOfDurationMs = 4;
+      final int _cursorIndexOfTitle = 5;
+      final int _cursorIndexOfNotes = 6;
+      final int _cursorIndexOfIsDraft = 7;
+      final int _cursorIndexOfCreatedAt = 8;
+      final int _cursorIndexOfUpdatedAt = 9;
       while (_cursor.moveToNext()) {
         final String _tmpKey;
         if (_cursor.isNull(_itemKeyIndex)) {
@@ -582,6 +583,12 @@ public final class PersonDao_Impl implements PersonDao {
               _tmpPersonId = null;
             } else {
               _tmpPersonId = _cursor.getString(_cursorIndexOfPersonId);
+            }
+            final String _tmpContextId;
+            if (_cursor.isNull(_cursorIndexOfContextId)) {
+              _tmpContextId = null;
+            } else {
+              _tmpContextId = _cursor.getString(_cursorIndexOfContextId);
             }
             final String _tmpAudioFileName;
             _tmpAudioFileName = _cursor.getString(_cursorIndexOfAudioFileName);
@@ -607,7 +614,7 @@ public final class PersonDao_Impl implements PersonDao {
             _tmpCreatedAt = _cursor.getLong(_cursorIndexOfCreatedAt);
             final long _tmpUpdatedAt;
             _tmpUpdatedAt = _cursor.getLong(_cursorIndexOfUpdatedAt);
-            _item_1 = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
+            _item_1 = new VoiceLogEntity(_tmpId,_tmpPersonId,_tmpContextId,_tmpAudioFileName,_tmpDurationMs,_tmpTitle,_tmpNotes,_tmpIsDraft,_tmpCreatedAt,_tmpUpdatedAt);
             _tmpRelation.add(_item_1);
           }
         }

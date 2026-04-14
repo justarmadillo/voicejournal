@@ -79,6 +79,9 @@ dependencies {
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.lifecycle.viewmodel.compose)
 
+    // DocumentFile (for SAF folder access)
+    implementation("androidx.documentfile:documentfile:1.0.1")
+
     // Core
     implementation(libs.core.ktx)
     implementation(libs.activity.compose)
